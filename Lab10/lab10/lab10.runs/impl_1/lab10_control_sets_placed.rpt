@@ -1,0 +1,104 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Wed Dec  3 19:02:47 2025
+| Host         : LAPTOP-K96KR7IV running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file lab10_control_sets_placed.rpt
+| Design       : lab10
+| Device       : xc7a35ti
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    26 |
+|    Minimum number of control sets                        |    26 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    93 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    26 |
+| >= 0 to < 4        |     5 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     4 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    10 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              42 |           27 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             172 |           48 |
+| Yes          | No                    | No                     |              33 |           13 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             420 |          198 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------------------+-----------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |              Enable Signal             |          Set/Reset Signal         | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+----------------------------------------+-----------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG |                                        | curr_skin_index[1]_i_1_n_0        |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG |                                        | curr_skin_index[0]_i_1_n_0        |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | reset_n_IBUF                           |                                   |                1 |              1 |         1.00 |
+|  vga_clk_BUFG  |                                        |                                   |                1 |              1 |         1.00 |
+|  vga_clk_BUFG  |                                        | lcd0/rst0                         |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG | lcd0/icode[3]_i_1_n_0                  |                                   |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | lcd0/tcode[3]_i_1_n_0                  |                                   |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | uart_inst/rx_bits_remaining[3]_i_1_n_0 |                                   |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG |                                        | uart_inst/rx_countdown[5]_i_1_n_0 |                3 |              6 |         2.00 |
+|  clk_IBUF_BUFG | snake_x                                | uart_inst/SR[0]                   |                4 |              6 |         1.50 |
+|  clk_IBUF_BUFG | snake_y[0][5]_i_1_n_0                  | uart_inst/SR[0]                   |                3 |              6 |         2.00 |
+|  clk_IBUF_BUFG | lcd0/lcd_initialized_reg_n_0           | lcd0/rst0                         |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG |                                        | clk_divider0/counter[7]_i_1_n_0   |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_inst/rx_data[7]_i_1_n_0           |                                   |                3 |              8 |         2.67 |
+|  vga_clk_BUFG  | vs0/v_count_reg[9]_i_2_n_0             | vs0/v_count_reg[9]_i_1_n_0        |                4 |             10 |         2.50 |
+|  clk_IBUF_BUFG | vs0/pixel_tick                         |                                   |                5 |             12 |         2.40 |
+|  clk_IBUF_BUFG | lcd0/lcd_initialized_reg_n_0           | lcd0/text_count[0]_i_1_n_0        |                7 |             25 |         3.57 |
+|  clk_IBUF_BUFG |                                        | move_counter[0]_i_1_n_0           |                7 |             26 |         3.71 |
+|  clk_IBUF_BUFG |                                        | btn_db0/clear                     |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG |                                        | btn_db1/clear                     |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG |                                        | btn_db2/clear                     |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG |                                        | btn_db3/clear                     |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | lcd0/init_e_i_1_n_0                    | lcd0/rst0                         |                7 |             32 |         4.57 |
+|  clk_IBUF_BUFG | snake_direction[1]_i_2_n_0             | uart_inst/SR[0]                   |               16 |             50 |         3.12 |
+|  vga_clk_BUFG  | vs0/pixel_tick                         | vs0/h_count_reg[9]_i_1_n_0        |              154 |            284 |         1.84 |
+|  clk_IBUF_BUFG |                                        |                                   |             1580 |           6253 |         3.96 |
++----------------+----------------------------------------+-----------------------------------+------------------+----------------+--------------+
+
+
