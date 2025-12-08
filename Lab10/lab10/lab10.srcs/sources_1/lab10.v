@@ -41,6 +41,7 @@ localparam SNAKE_MAX_LEN = 100;
 localparam SNAKE_INIT_X = 8;
 localparam SNAKE_INIT_Y = 6;
 localparam SNAKE_SKIN_SIZE = 20;
+localparam TOTAL_SNAKE_SKIN_SIZE = 1200;
 
 localparam DIR_RIGHT = 2'd0;
 localparam DIR_DOWN  = 2'd1;
@@ -51,6 +52,15 @@ localparam STATE_INIT    = 2'd0;
 localparam STATE_PLAYING = 2'd1;
 localparam STATE_GAMEOVER = 2'd2;
 
+localparam FRUIT_SIZE = 20;
+localparam TOTAL_FRUIT_SIZE = 400;
+
+localparam TOTAL_SCORE_TEXT_SIZE = 1200;
+localparam TOTAL_SCORE_NUM_SIZE = 3600;
+
+localparam OBSTACLE_NUM = 5;
+localparam OBSTACLE_SIZE = 20;
+localparam TOTAL_OBSTACLE_SIZE = 400;
 //========================================================================
 // Signal Declarations
 //========================================================================
@@ -60,8 +70,8 @@ wire vga_clk, video_on, pixel_tick;
 wire [9:0] pixel_x, pixel_y;
 reg  [11:0] rgb_reg, rgb_next;
 
-wire [11:0] bg_data, skin_data, data_in;
-wire [17:0] bg_addr, skin_addr;
+wire [11:0] bg_data, skin_data, fruit_data, score_text_data, score_num_data, obstacle_data, data_in;
+wire [17:0] bg_addr, skin_addr, fruit_addr, score_text_addr, score_num_addr, obstacle_addr;
 wire sram_we, sram_en;
 
 reg [1:0] game_state;
@@ -72,18 +82,30 @@ reg [5:0] snake_x [0:SNAKE_MAX_LEN-1];
 reg [5:0] snake_y [0:SNAKE_MAX_LEN-1];
 reg [6:0] snake_length;
 
+wire [5:0] next_head_x, next_head_y;
+
 reg [1:0] curr_skin_index;
 wire [17:0] skin_addr_base;
+
+reg [5:0] fruit_x, fruit_y;
+wire [5:0] rand_x, rand_y;
+reg fruit_vaild, fruit_on_field, fruit_eat;
+
+reg [3:0] obstacle_pos_x[0:4], obstacle_pos_y[0:4];
+
+reg [7:0] score_10, score_1, score;
+wire [17:0] score_addr_base;
+wire [9:0] score_text_addr_base;
 
 reg [26:0] move_counter;
 localparam MOVE_SPEED = 27'd50_000_000;  // 5Hz
 wire move_tick;
 
-wire collision, self_collision, wall_collision;
+wire collision, self_collision, wall_collision, obstacle_collision;
 reg self_collision_reg;
 wire [5:0] current_grid_x;
 wire [5:0] current_grid_y;
-wire is_snake;
+wire is_snake, is_fruit, is_score_text, is_score_num_1, is_score_num_10, is_obstacle;
 reg is_snake_reg;
 
 wire transmit, received;
@@ -97,7 +119,7 @@ reg [127:0] row_B;
 
 integer i;
 
-assign usr_led = {snake_y[0][3:0]};
+assign usr_led = fruit_x;
 assign uart_tx = 1'b1;
 
 //========================================================================
@@ -119,7 +141,7 @@ debounce #(.DEBOUNCE_PERIOD(2_000_000)) btn_db3 (
 //========================================================================
 // SRAM
 //========================================================================
-sram #(
+/*sram #(
     .DATA_WIDTH(12), 
     .ADDR_WIDTH(18), 
     .RAM_SIZE(VBUF_W*VBUF_H),
@@ -131,12 +153,13 @@ sram #(
     .addr(bg_addr), 
     .data_i(data_in), 
     .data_o(bg_data)
-);
+);*/
+//目前背景都用純色所以不用讀bg_data 可以省LUT 之後如果改背景再做
 
 sram #(
     .DATA_WIDTH(12), 
     .ADDR_WIDTH(18), 
-    .RAM_SIZE(SNAKE_SKIN_SIZE*SNAKE_SKIN_SIZE*3),
+    .RAM_SIZE(TOTAL_SNAKE_SKIN_SIZE),
     .MEM_FILE("skin.mem")
 ) ram_skin (
     .clk(clk), 
@@ -147,6 +170,61 @@ sram #(
     .data_o(skin_data)
 );
 
+sram #(
+    .DATA_WIDTH(12), 
+    .ADDR_WIDTH(18), 
+    .RAM_SIZE(TOTAL_FRUIT_SIZE),
+    .MEM_FILE("fruit.mem")
+) ram_fruit (
+    .clk(clk), 
+    .we(sram_we), 
+    .en(sram_en),
+    .addr(fruit_addr), 
+    .data_i(data_in), 
+    .data_o(fruit_data)
+);
+
+sram #(
+    .DATA_WIDTH(12), 
+    .ADDR_WIDTH(18), 
+    .RAM_SIZE(TOTAL_SCORE_TEXT_SIZE),
+    .MEM_FILE("score_text.mem")
+) ram_score_text (
+    .clk(clk), 
+    .we(sram_we), 
+    .en(sram_en),
+    .addr(score_text_addr), 
+    .data_i(data_in), 
+    .data_o(score_text_data)
+);
+
+sram #(
+    .DATA_WIDTH(12), 
+    .ADDR_WIDTH(18), 
+    .RAM_SIZE(TOTAL_SCORE_NUM_SIZE),
+    .MEM_FILE("score_num.mem")
+) ram_score_num (
+    .clk(clk), 
+    .we(sram_we), 
+    .en(sram_en),
+    .addr(score_num_addr), 
+    .data_i(data_in), 
+    .data_o(score_num_data)
+);
+
+sram #(
+    .DATA_WIDTH(12), 
+    .ADDR_WIDTH(18), 
+    .RAM_SIZE(TOTAL_OBSTACLE_SIZE),
+    .MEM_FILE("obstacle.mem")
+) ram_obstacle (
+    .clk(clk), 
+    .we(sram_we), 
+    .en(sram_en),
+    .addr(obstacle_addr), 
+    .data_i(data_in), 
+    .data_o(obstacle_data)
+);
 assign sram_we = 1'b0;
 assign sram_en = 1'b1;
 assign data_in = 12'h000;
@@ -221,8 +299,8 @@ always @(posedge clk) begin
         game_state <= STATE_INIT;
     end else begin
         case (game_state)
-            STATE_INIT:    game_state <= STATE_PLAYING;
-            STATE_PLAYING: if (collision) game_state <= STATE_GAMEOVER;
+            STATE_INIT: if (|btn_pressed) game_state <= STATE_PLAYING;
+            STATE_PLAYING: if (self_collision || score == 0) game_state <= STATE_GAMEOVER;
             STATE_GAMEOVER: if (|btn_pressed || received) game_state <= STATE_INIT;
             default:       game_state <= STATE_INIT;
         endcase
@@ -240,7 +318,6 @@ always @(posedge clk) begin
         next_direction <= DIR_RIGHT;
         direction_changed <= 1'b0;
         uart_data_read <= 1'b0;
-        
         for (i = 0; i < SNAKE_MAX_LEN; i = i + 1) begin
             if (i < SNAKE_INIT_LEN) begin
                 snake_x[i] <= SNAKE_INIT_X - i;
@@ -311,6 +388,12 @@ always @(posedge clk) begin
                     snake_y[i] <= snake_y[i-1];
                 end
             end
+            // Add length
+                if(next_head_x == fruit_x && next_head_y == fruit_y) begin
+                    snake_x[snake_length] = snake_x[snake_length - 1];
+                    snake_y[snake_length] = snake_y[snake_length - 1];
+                    snake_length <= snake_length + 1;
+                end
             
             // Move head
             case (next_direction)
@@ -320,10 +403,10 @@ always @(posedge clk) begin
                 DIR_UP:    snake_y[0] <= snake_y[0] - 5'd1;
             endcase
         end
-        
-        if (move_tick) begin
+        else if (move_tick) begin
             direction_changed <= 1'b0;
         end
+        
         
     end else begin
         direction_changed <= 1'b0;
@@ -350,11 +433,11 @@ assign move_tick = (move_counter == MOVE_SPEED - 1);
 //========================================================================
 // Collision Detection
 //========================================================================
-wire [5:0] next_head_x = (next_direction == DIR_RIGHT) ? (snake_x[0] + 5'd1) :
+assign next_head_x = (next_direction == DIR_RIGHT) ? (snake_x[0] + 5'd1) :
                          (next_direction == DIR_LEFT)  ? (snake_x[0] - 5'd1) :
                          snake_x[0];
 
-wire [5:0] next_head_y = (next_direction == DIR_DOWN) ? (snake_y[0] + 5'd1) :
+assign next_head_y = (next_direction == DIR_DOWN) ? (snake_y[0] + 5'd1) :
                          (next_direction == DIR_UP)   ? (snake_y[0] - 5'd1) :
                          snake_y[0];
 
@@ -362,7 +445,7 @@ always @(*) begin
     self_collision_reg = 1'b0;
     for (i = 1; i < SNAKE_MAX_LEN; i = i + 1) begin
         if (i < snake_length) begin
-            if (next_head_x == snake_x[i] && next_head_y == snake_y[i]) begin
+            if (snake_x[0] == snake_x[i] && snake_y[0] == snake_y[i]) begin
                 self_collision_reg = 1'b1;
             end
         end
@@ -374,10 +457,156 @@ assign self_collision = self_collision_reg;
 
 assign wall_collision = (next_head_x >= GRID_W-1) || (next_head_y >= GRID_H-1) ||
                         (next_head_x == 6'd0) || (next_head_y == 6'd0);
+                        
+assign obstacle_collision = (next_head_x == obstacle_pos_x[0] && next_head_y == obstacle_pos_y[0]) ||
+                            (next_head_x == obstacle_pos_x[1] && next_head_y == obstacle_pos_y[1]) ||
+                            (next_head_x == obstacle_pos_x[2] && next_head_y == obstacle_pos_y[2]) ||
+                            (next_head_x == obstacle_pos_x[3] && next_head_y == obstacle_pos_y[3]) ||
+                            (next_head_x == obstacle_pos_x[4] && next_head_y == obstacle_pos_y[4]);
 
-assign collision = wall_collision || self_collision;
+assign collision = wall_collision || obstacle_collision;
+
+//========================================================================
+// Fruit Generating
+//========================================================================
+random_num#(
+    .mod(14)
+)random_fruit_x(
+    .clk(clk),
+    .rst(~reset_n),
+    .rand_num(rand_x)
+);
+
+random_num#(
+    .mod(10)
+)random_fruit_y(
+    .clk(clk),
+    .rst(~reset_n),
+    .rand_num(rand_y)
+);
+//判斷生成出來的食物會不會撞到蛇/障礙物
+always @(*) begin
+    fruit_vaild = 1'b1;
+    for (i = 0; i < SNAKE_MAX_LEN; i = i + 1) begin
+        if (i < snake_length) begin
+            if (rand_x + 1 == snake_x[i] && rand_y + 1 == snake_y[i]) begin
+                fruit_vaild = 1'b0;
+            end
+        end
+    end
+    for (i = 0; i < OBSTACLE_NUM; i = i + 1) begin
+        if (rand_x + 1 == obstacle_pos_x[i] && rand_y + 1 == obstacle_pos_y[i]) begin
+            fruit_vaild = 1'b0;
+        end
+    end
+end
+
+always @(posedge clk) begin
+    if(~reset_n || game_state == STATE_INIT) begin
+        fruit_x <= 0;
+        fruit_y <= 0;
+        fruit_eat <= 0;
+        fruit_on_field <= 0;
+    end
+    else if(game_state == STATE_PLAYING) begin
+    
+        if(fruit_eat) begin
+            fruit_x <= 0;
+            fruit_y <= 0;
+            fruit_on_field <= 0;
+            fruit_eat <= 0;
+        end
+        else begin
+            if (fruit_x == snake_x[0] && fruit_y == snake_y[0]) begin
+                fruit_eat = 1'b1;
+            end
+        end
+        
+        if(!fruit_on_field) begin
+            if(fruit_vaild) begin
+                fruit_x <= rand_x + 1;
+                fruit_y <= rand_y + 1;
+                fruit_on_field <= 1;
+            end
+        end
+    end
+end
+
+//========================================================================
+// Obstacles
+//========================================================================
 
 
+always @(posedge clk) begin
+    if(~reset_n || game_state == STATE_INIT) begin
+        obstacle_pos_x[0] <= 4;
+        obstacle_pos_y[0] <= 3;
+        obstacle_pos_x[1] <= 11;
+        obstacle_pos_y[1] <= 2;
+        obstacle_pos_x[2] <= 5;
+        obstacle_pos_y[2] <= 8;
+        obstacle_pos_x[3] <= 7;
+        obstacle_pos_y[3] <= 4;
+        obstacle_pos_x[4] <= 12;
+        obstacle_pos_y[4] <= 8;
+    end
+end
+
+//========================================================================
+// Score
+//========================================================================
+
+always @(posedge clk) begin
+    if(~reset_n || game_state == STATE_INIT) begin
+        score <= 5;
+        score_1 <= 5;
+        score_10 <= 0;
+    end
+    else if(game_state == STATE_PLAYING) begin
+        if(fruit_eat) begin
+            if(score_1 == 9) begin
+                score_1 <= 0;
+                score_10 <= score_10 + 1;
+            end
+            else score_1 <= score_1 + 1;
+        end
+        
+        //撞到牆/障礙的話每一次move_tick就扣一分
+        else if(move_tick && collision) begin
+            if(score_1 == 0) begin
+                score_1 <= 9;
+                score_10 <= score_10 - 1;
+            end
+            else score_1 <= score_1 - 1;
+        end
+        score <= score_10 * 10 + score_1;
+    end
+end
+
+assign score_addr_base = (is_score_num_10)? (score_10 == 1) ? 18'd0400 :
+                                            (score_10 == 2) ? 18'd0800 :
+                                            (score_10 == 3) ? 18'd1200 :
+                                            (score_10 == 4) ? 18'd1600 :
+                                            (score_10 == 5) ? 18'd2000 :
+                                            (score_10 == 6) ? 18'd2400 :
+                                            (score_10 == 7) ? 18'd2800 :
+                                            (score_10 == 8) ? 18'd3200 :
+                                            (score_10 == 9) ? 18'd3600 :
+                                                              18'd0000 :
+                                            (score_1 == 1)  ? 18'd0400 :
+                                            (score_1 == 2)  ? 18'd0800 :
+                                            (score_1 == 3)  ? 18'd1200 :
+                                            (score_1 == 4)  ? 18'd1600 :
+                                            (score_1 == 5)  ? 18'd2000 :
+                                            (score_1 == 6)  ? 18'd2400 :
+                                            (score_1 == 7)  ? 18'd2800 :
+                                            (score_1 == 8)  ? 18'd3200 :
+                                            (score_1 == 9)  ? 18'd3600 :
+                                                              18'd0000 ;
+
+assign score_text_addr_base = (((pixel_x >> 1) / GRID_SIZE) == 12)? 18'd400:
+                              (((pixel_x >> 1) / GRID_SIZE) == 13)? 18'd800:
+                                                                    18'd000;
 //========================================================================
 // VGA Rendering
 //========================================================================
@@ -396,23 +625,39 @@ always @(*) begin
 end
 
 assign is_snake = is_snake_reg;
-
+assign is_fruit = (fruit_x == current_grid_x && fruit_y == current_grid_y) && fruit_on_field;
+assign is_score_text = (current_grid_x >= 11 && current_grid_x <= 13 && current_grid_y == 0);
+assign is_score_num_10 = (current_grid_x == 14 && current_grid_y == 0);
+assign is_score_num_1 = (current_grid_x == 15 && current_grid_y == 0);
+assign is_obstacle = (current_grid_x == obstacle_pos_x[0] && current_grid_y == obstacle_pos_y[0]) ||
+                     (current_grid_x == obstacle_pos_x[1] && current_grid_y == obstacle_pos_y[1]) ||
+                     (current_grid_x == obstacle_pos_x[2] && current_grid_y == obstacle_pos_y[2]) ||
+                     (current_grid_x == obstacle_pos_x[3] && current_grid_y == obstacle_pos_y[3]) ||
+                     (current_grid_x == obstacle_pos_x[4] && current_grid_y == obstacle_pos_y[4]);
 // Texture coordinates
 
 wire [8:0] pix_x_half = pixel_x >> 1;
 wire [7:0] pix_y_half = pixel_y >> 1;
 
-assign current_grid_x = pix_x_half / GRID_SIZE;  
-assign current_grid_y = pix_y_half / GRID_SIZE;  
+assign current_grid_x = (pixel_x >> 1) / GRID_SIZE;  
+assign current_grid_y = (pixel_y >> 1) / GRID_SIZE;  
 
 wire [4:0] snake_tex_x = pix_x_half % GRID_SIZE; 
 wire [4:0] snake_tex_y = pix_y_half % GRID_SIZE; 
 
-wire [8:0] grid_x_pixels = (current_grid_x << 4) + (current_grid_x << 2);
-wire [8:0] grid_y_pixels = (current_grid_y << 4) + (current_grid_y << 2);
+wire [4:0] grid_pixel_x = pix_x_half % GRID_SIZE; 
+wire [4:0] grid_pixel_y = pix_y_half % GRID_SIZE; 
+
+//wire [8:0] grid_x_pixels = (current_grid_x << 4) + (current_grid_x << 2);
+//wire [8:0] grid_y_pixels = (current_grid_y << 4) + (current_grid_y << 2);
 
 assign bg_addr = (pixel_y >> 1) * VBUF_W + (pixel_x >> 1);
 assign skin_addr = skin_addr_base + snake_tex_y * SNAKE_SKIN_SIZE + snake_tex_x;
+assign fruit_addr = grid_pixel_y * FRUIT_SIZE + grid_pixel_x;
+assign score_text_addr = pix_y_half * GRID_SIZE *3 + grid_pixel_x + ((pix_x_half / GRID_SIZE) - 11) * GRID_SIZE;
+assign score_num_addr = (is_score_num_10) ? grid_pixel_y * GRID_SIZE + grid_pixel_x + score_addr_base
+                                          : grid_pixel_y * GRID_SIZE + grid_pixel_x + score_addr_base;
+assign obstacle_addr = grid_pixel_y * GRID_SIZE + grid_pixel_x;
 
 assign {VGA_RED, VGA_GREEN, VGA_BLUE} = rgb_reg;
 
@@ -420,19 +665,34 @@ always @(posedge clk) begin
     if (pixel_tick) rgb_reg <= rgb_next;
 end
 
-always @(*) begin
+always @(posedge clk) begin
     if (~video_on) begin
-        rgb_next = 12'h000;
-    end else begin
-        if (current_grid_x == 0 || current_grid_x == GRID_W-1 || 
+        rgb_next <= 12'h000;
+    end 
+    else begin
+        if (is_score_text && score_text_data != 12'h0f0) begin
+            rgb_next <= score_text_data;
+        end
+        else if ((is_score_num_1 || is_score_num_10) && score_num_data != 12'h0f0) begin
+            rgb_next <= score_num_data;
+        end
+        else if (current_grid_x == 0 || current_grid_x == GRID_W-1 || 
             current_grid_y == 0 || current_grid_y == GRID_H-1) begin
-            rgb_next = 12'h684;
+            rgb_next <= 12'h684;
         end
         else if (is_snake) begin
-            rgb_next = skin_data;
+            rgb_next <= skin_data;
         end 
+        else if (is_fruit && fruit_data != 12'h0f0) begin
+            rgb_next <= fruit_data;
+        end
+        else if (is_obstacle) begin
+            if(obstacle_data == 12'h0f0) rgb_next <= 12'h000;
+            else rgb_next <= obstacle_data;
+        end
         else begin
-            rgb_next = bg_data;
+            if((current_grid_x + current_grid_y) % 2) rgb_next = 12'h8a5;
+            else rgb_next <= 12'h9c6;
         end
     end
 end

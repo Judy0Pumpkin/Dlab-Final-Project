@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date         : Wed Dec  3 19:02:47 2025
-| Host         : LAPTOP-K96KR7IV running 64-bit major release  (build 9200)
+| Date         : Mon Dec  8 06:14:38 2025
+| Host         : DESKTOP-OHA0S7T running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file lab10_control_sets_placed.rpt
 | Design       : lab10
 | Device       : xc7a35ti
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    26 |
-|    Minimum number of control sets                        |    26 |
+| Total control sets                                       |   132 |
+|    Minimum number of control sets                        |   132 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    93 |
+| Unused register locations in slices containing registers |   493 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    26 |
+| Total control sets |   132 |
 | >= 0 to < 4        |     5 |
-| >= 4 to < 6        |     3 |
-| >= 6 to < 8        |     4 |
-| >= 8 to < 10       |     2 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     6 |
 | >= 10 to < 12      |     1 |
-| >= 12 to < 14      |     1 |
-| >= 14 to < 16      |     0 |
-| >= 16              |    10 |
+| >= 12 to < 14      |   102 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    11 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,47 +58,153 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              42 |           27 |
+| No           | No                    | No                     |              58 |           42 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             172 |           48 |
-| Yes          | No                    | No                     |              33 |           13 |
+| No           | Yes                   | No                     |             215 |           73 |
+| Yes          | No                    | No                     |              33 |           12 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             420 |          198 |
+| Yes          | Yes                   | No                     |            1369 |          456 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+----------------------------------------+-----------------------------------+------------------+----------------+--------------+
-|  Clock Signal  |              Enable Signal             |          Set/Reset Signal         | Slice Load Count | Bel Load Count | Bels / Slice |
-+----------------+----------------------------------------+-----------------------------------+------------------+----------------+--------------+
-|  clk_IBUF_BUFG |                                        | curr_skin_index[1]_i_1_n_0        |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG |                                        | curr_skin_index[0]_i_1_n_0        |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG | reset_n_IBUF                           |                                   |                1 |              1 |         1.00 |
-|  vga_clk_BUFG  |                                        |                                   |                1 |              1 |         1.00 |
-|  vga_clk_BUFG  |                                        | lcd0/rst0                         |                2 |              2 |         1.00 |
-|  clk_IBUF_BUFG | lcd0/icode[3]_i_1_n_0                  |                                   |                1 |              4 |         4.00 |
-|  clk_IBUF_BUFG | lcd0/tcode[3]_i_1_n_0                  |                                   |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | uart_inst/rx_bits_remaining[3]_i_1_n_0 |                                   |                1 |              4 |         4.00 |
-|  clk_IBUF_BUFG |                                        | uart_inst/rx_countdown[5]_i_1_n_0 |                3 |              6 |         2.00 |
-|  clk_IBUF_BUFG | snake_x                                | uart_inst/SR[0]                   |                4 |              6 |         1.50 |
-|  clk_IBUF_BUFG | snake_y[0][5]_i_1_n_0                  | uart_inst/SR[0]                   |                3 |              6 |         2.00 |
-|  clk_IBUF_BUFG | lcd0/lcd_initialized_reg_n_0           | lcd0/rst0                         |                3 |              7 |         2.33 |
-|  clk_IBUF_BUFG |                                        | clk_divider0/counter[7]_i_1_n_0   |                2 |              8 |         4.00 |
-|  clk_IBUF_BUFG | uart_inst/rx_data[7]_i_1_n_0           |                                   |                3 |              8 |         2.67 |
-|  vga_clk_BUFG  | vs0/v_count_reg[9]_i_2_n_0             | vs0/v_count_reg[9]_i_1_n_0        |                4 |             10 |         2.50 |
-|  clk_IBUF_BUFG | vs0/pixel_tick                         |                                   |                5 |             12 |         2.40 |
-|  clk_IBUF_BUFG | lcd0/lcd_initialized_reg_n_0           | lcd0/text_count[0]_i_1_n_0        |                7 |             25 |         3.57 |
-|  clk_IBUF_BUFG |                                        | move_counter[0]_i_1_n_0           |                7 |             26 |         3.71 |
-|  clk_IBUF_BUFG |                                        | btn_db0/clear                     |                8 |             32 |         4.00 |
-|  clk_IBUF_BUFG |                                        | btn_db1/clear                     |                8 |             32 |         4.00 |
-|  clk_IBUF_BUFG |                                        | btn_db2/clear                     |                8 |             32 |         4.00 |
-|  clk_IBUF_BUFG |                                        | btn_db3/clear                     |                8 |             32 |         4.00 |
-|  clk_IBUF_BUFG | lcd0/init_e_i_1_n_0                    | lcd0/rst0                         |                7 |             32 |         4.57 |
-|  clk_IBUF_BUFG | snake_direction[1]_i_2_n_0             | uart_inst/SR[0]                   |               16 |             50 |         3.12 |
-|  vga_clk_BUFG  | vs0/pixel_tick                         | vs0/h_count_reg[9]_i_1_n_0        |              154 |            284 |         1.84 |
-|  clk_IBUF_BUFG |                                        |                                   |             1580 |           6253 |         3.96 |
-+----------------+----------------------------------------+-----------------------------------+------------------+----------------+--------------+
++-----------------------+----------------------------------------+-----------------------------------+------------------+----------------+--------------+
+|      Clock Signal     |              Enable Signal             |          Set/Reset Signal         | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------+----------------------------------------+-----------------------------------+------------------+----------------+--------------+
+|  clk_divider0/vga_clk |                                        |                                   |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG        | reset_n_IBUF                           |                                   |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG        |                                        | curr_skin_index[0]                |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG        |                                        | curr_skin_index[1]                |                1 |              1 |         1.00 |
+|  clk_divider0/vga_clk |                                        | lcd0/rst0                         |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG        | lcd0/tcode[3]_i_1_n_0                  |                                   |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG        | uart_inst/rx_bits_remaining[3]_i_1_n_0 |                                   |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG        |                                        | snake_y[0][5]_i_1_n_0             |                3 |              4 |         1.33 |
+|  clk_IBUF_BUFG        | lcd0/icode[3]_i_1_n_0                  |                                   |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG        |                                        | uart_inst/rx_countdown[5]_i_1_n_0 |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG        | lcd0/lcd_initialized_reg_n_0           | lcd0/rst0                         |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG        | score_10                               | snake_y[0][5]_i_1_n_0             |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG        | score_1                                | snake_y[0][5]_i_1_n_0             |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG        |                                        | clk_divider0/counter[7]_i_1_n_0   |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG        | score                                  | snake_y[0][5]_i_1_n_0             |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG        | uart_inst/rx_data[7]_i_1_n_0           |                                   |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG        |                                        | vs0/score_text_addr0[2]           |                6 |              8 |         1.33 |
+|  clk_divider0/vga_clk | vs0/v_count_reg[9]_i_2_n_0             | vs0/v_count_reg[9]_i_1_n_0        |                4 |             10 |         2.50 |
+|  clk_IBUF_BUFG        | snake_y[90][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[91][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[94][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[93][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG        | snake_y[95][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                9 |             12 |         1.33 |
+|  clk_IBUF_BUFG        | snake_y[98][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG        | snake_y[99][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG        | snake_y[97][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                2 |             12 |         6.00 |
+|  clk_IBUF_BUFG        | snake_y[9][5]_i_1_n_0                  | snake_y[0][5]_i_1_n_0             |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG        | snake_y[86][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG        | vs0/pixel_tick                         |                                   |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG        | vs0/E[0]                               | vs0/SR[0]                         |                6 |             12 |         2.00 |
+|  clk_IBUF_BUFG        | snake_x__0                             | snake_y[0][5]_i_1_n_0             |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG        | snake_y[11][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                6 |             12 |         2.00 |
+|  clk_IBUF_BUFG        | snake_y[10][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                6 |             12 |         2.00 |
+|  clk_IBUF_BUFG        | snake_y[14][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG        | snake_y[12][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                8 |             12 |         1.50 |
+|  clk_IBUF_BUFG        | snake_y[15][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                7 |             12 |         1.71 |
+|  clk_IBUF_BUFG        | snake_y[17][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG        | snake_y[13][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                5 |             12 |         2.40 |
+|  clk_IBUF_BUFG        | snake_y[16][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                5 |             12 |         2.40 |
+|  clk_IBUF_BUFG        | snake_y[19][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[18][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[1][5]_i_1_n_0                  | snake_y[0][5]_i_1_n_0             |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG        | snake_y[21][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[24][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                2 |             12 |         6.00 |
+|  clk_IBUF_BUFG        | snake_y[20][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[23][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[22][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                6 |             12 |         2.00 |
+|  clk_IBUF_BUFG        | snake_y[28][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG        | snake_y[26][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                2 |             12 |         6.00 |
+|  clk_IBUF_BUFG        | snake_y[29][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG        | snake_y[25][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG        | snake_y[2][5]_i_1_n_0                  | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[27][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                7 |             12 |         1.71 |
+|  clk_IBUF_BUFG        | snake_y[30][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                2 |             12 |         6.00 |
+|  clk_IBUF_BUFG        | snake_y[33][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                5 |             12 |         2.40 |
+|  clk_IBUF_BUFG        | snake_y[35][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG        | snake_y[32][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[31][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                7 |             12 |         1.71 |
+|  clk_IBUF_BUFG        | snake_y[34][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                2 |             12 |         6.00 |
+|  clk_IBUF_BUFG        | snake_y[40][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[39][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG        | snake_y[37][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG        | snake_y[36][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[38][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                2 |             12 |         6.00 |
+|  clk_IBUF_BUFG        | snake_y[3][5]_i_1_n_0                  | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[42][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG        | snake_y[43][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[44][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[41][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[46][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[45][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[49][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[47][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                7 |             12 |         1.71 |
+|  clk_IBUF_BUFG        | snake_y[4][5]_i_1_n_0                  | snake_y[0][5]_i_1_n_0             |                5 |             12 |         2.40 |
+|  clk_IBUF_BUFG        | snake_y[51][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[50][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG        | snake_y[48][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG        | snake_y[56][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[54][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[52][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[53][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG        | snake_y[55][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                5 |             12 |         2.40 |
+|  clk_IBUF_BUFG        | snake_y[57][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                2 |             12 |         6.00 |
+|  clk_IBUF_BUFG        | snake_y[58][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG        | snake_y[5][5]_i_1_n_0                  | snake_y[0][5]_i_1_n_0             |                5 |             12 |         2.40 |
+|  clk_IBUF_BUFG        | snake_y[60][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[61][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                2 |             12 |         6.00 |
+|  clk_IBUF_BUFG        | snake_y[62][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[59][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[63][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                8 |             12 |         1.50 |
+|  clk_IBUF_BUFG        | snake_y[66][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[68][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[64][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG        | snake_y[65][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[67][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[72][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[70][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[6][5]_i_1_n_0                  | snake_y[0][5]_i_1_n_0             |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG        | snake_y[73][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG        | snake_y[71][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                5 |             12 |         2.40 |
+|  clk_IBUF_BUFG        | snake_y[79][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                7 |             12 |         1.71 |
+|  clk_IBUF_BUFG        | snake_y[75][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG        | snake_y[77][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[78][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[74][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                5 |             12 |         2.40 |
+|  clk_IBUF_BUFG        | snake_y[76][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                5 |             12 |         2.40 |
+|  clk_IBUF_BUFG        | snake_y[81][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[7][5]_i_1_n_0                  | snake_y[0][5]_i_1_n_0             |                7 |             12 |         1.71 |
+|  clk_IBUF_BUFG        | snake_y[83][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[80][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                5 |             12 |         2.40 |
+|  clk_IBUF_BUFG        | snake_y[84][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[82][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[87][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG        | snake_y[85][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG        | snake_y[69][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG        | snake_y[88][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[89][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                2 |             12 |         6.00 |
+|  clk_IBUF_BUFG        | snake_y[8][5]_i_1_n_0                  | snake_y[0][5]_i_1_n_0             |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG        | snake_y[96][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | snake_y[92][5]_i_1_n_0                 | snake_y[0][5]_i_1_n_0             |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG        | random_fruit_x/E[0]                    | snake_y[0][5]_i_1_n_0             |                3 |             15 |         5.00 |
+|  clk_divider0/vga_clk | vs0/pixel_tick                         | vs0/h_count_reg[9]_i_1_n_0        |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG        | lcd0/lcd_initialized_reg_n_0           | lcd0/text_count[0]_i_1_n_0        |                7 |             25 |         3.57 |
+|  clk_IBUF_BUFG        |                                        | clear                             |                7 |             27 |         3.86 |
+|  clk_IBUF_BUFG        | snake_length                           | snake_y[0][5]_i_1_n_0             |               20 |             28 |         1.40 |
+|  clk_IBUF_BUFG        |                                        | lcd0/rst0                         |               17 |             30 |         1.76 |
+|  clk_IBUF_BUFG        |                                        | btn_db0/clear                     |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG        |                                        | btn_db1/clear                     |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG        |                                        | btn_db2/clear                     |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG        |                                        | btn_db3/clear                     |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG        | lcd0/init_e_i_1_n_0                    | lcd0/rst0                         |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG        |                                        |                                   |              328 |           1199 |         3.66 |
++-----------------------+----------------------------------------+-----------------------------------+------------------+----------------+--------------+
 
 

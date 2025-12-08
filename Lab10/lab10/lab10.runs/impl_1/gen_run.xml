@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1764759569">
+<GenRun Id="impl_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1765145553">
   <File Type="PA-TCL" Name="lab10.tcl"/>
   <File Type="REPORTS-TCL" Name="lab10_reports.tcl"/>
   <File Type="INIT-TIMING" Name="lab10_timing_summary_init.rpt"/>
@@ -128,6 +128,13 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/lcd.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/random_num.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
