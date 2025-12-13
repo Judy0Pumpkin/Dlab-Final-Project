@@ -3,53 +3,35 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Mon Dec  8 02:54:49 2025
-# Process ID         : 18876
-# Current directory  : C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent20396 C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.xpr
-# Log file           : C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/vivado.log
-# Journal file       : C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10\vivado.jou
-# Running On         : DESKTOP-OHA0S7T
+# Start of session at: Thu Dec 11 22:02:50 2025
+# Process ID         : 14408
+# Current directory  : C:/Users/nicol/Dlab-Final-Project/Lab10/lab10
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent27940 C:\Users\nicol\Dlab-Final-Project\Lab10\lab10\lab10.xpr
+# Log file           : C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/vivado.log
+# Journal file       : C:/Users/nicol/Dlab-Final-Project/Lab10/lab10\vivado.jou
+# Running On         : LAPTOP-3VDKB8N4
 # Platform           : Windows Server 2016 or Windows 10
-# Operating System   : 26200
-# Processor Detail   : AMD Ryzen 7 5700                               
-# CPU Frequency      : 3693 MHz
-# CPU Physical cores : 8
-# CPU Logical cores  : 16
-# Host memory        : 17041 MB
-# Swap memory        : 1073 MB
-# Total Virtual      : 18115 MB
-# Available Virtual  : 5814 MB
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 7 155H
+# CPU Frequency      : 2995 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 22
+# Host memory        : 16866 MB
+# Swap memory        : 20401 MB
+# Total Virtual      : 37267 MB
+# Available Virtual  : 19441 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.xpr
-INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10'
+open_project C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.xpr
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.gen/sources_1'.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.gen/sources_1'.
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.1\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24c\1.0\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.1 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24c\1.1\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24i:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24i\1.0\board.xml as part xck24-ubva530-2lvi-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.2\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.3\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
-WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.ip_user_files'.
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.4 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.4\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.2\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.3\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.4 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.4\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.ip_user_files'.
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.6\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.7\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.4\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.5\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu1500\1.2\board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kd240_som:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kd240_som\1.0\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kd240_som:part0:1.1 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kd240_som\1.1\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kr260_som\1.0\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.1 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kr260_som\1.1\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kv260_som\1.2\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.3 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kv260_som\1.3\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.4 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kv260_som\1.4\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:scu35:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\scu35\1.0\board.xml as part xcsu35p-sbvb625-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:v80:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\v80\1.0\board.xml as part xcv80-lsva4737-2mhp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\2.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
@@ -116,26 +98,49 @@ Scanning sources...
 Finished scanning sources
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.1\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24c\1.0\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.1 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24c\1.1\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24i:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24i\1.0\board.xml as part xck24-ubva530-2lvi-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.2\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.3\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.4 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.4\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.2\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.3\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.4 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.4\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.6\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.7\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.4\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.5\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu1500\1.2\board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:scu35:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\scu35\1.0\board.xml as part xcsu35p-sbvb625-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:v80:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\v80\1.0\board.xml as part xcv80-lsva4737-2mhp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\2.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.4 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.4\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.3 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.6\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.7\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu110\1.4\board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.0\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.3\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.4\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu128\production\1.0\board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu129\production\1.0\board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu1525\1.3\board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.0\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.1\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.2\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
 INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Project 1-5713] Board part '' set for the project  is not found. BoardPart property will be unset. Please select board from latest repo build 
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
-open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 1630.191 ; gain = 228.457
+open_project: Time (s): cpu = 00:00:55 ; elapsed = 00:00:30 . Memory (MB): peak = 2753.934 ; gain = 1364.402
 update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+[Sat Dec 13 12:30:12 2025] Launched synth_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/runme.log
+[Sat Dec 13 12:30:12 2025] Launched impl_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/runme.log
 open_hw_manager
 connect_hw_server -allow_non_jtag
 INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
@@ -160,600 +165,287 @@ INFO: [Labtools 27-2221] Launch Output:
 
 
 
-connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1657.766 ; gain = 6.324
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2758.699 ; gain = 0.000
 open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319A4394AA
-set_property PROGRAM.FILE {C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319A438D4A
+set_property PROGRAM.FILE {C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
 current_hw_device [get_hw_devices xc7a35t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-close_hw_manager
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+[Sat Dec 13 13:08:25 2025] Launched synth_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/runme.log
+[Sat Dec 13 13:08:25 2025] Launched impl_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-[Mon Dec  8 02:57:41 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/runme.log
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-[Mon Dec  8 03:04:16 2025] Launched synth_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/runme.log
-[Mon Dec  8 03:04:17 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/runme.log
-open_hw_manager
-connect_hw_server -allow_non_jtag
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-2222] Launching hw_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-****** Xilinx hw_server v2025.1
-  **** Build date : May  6 2025 at 09:15:36
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-
-
-INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
-INFO: [Labtools 27-3417] Launching cs_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-
-******** Xilinx cs_server v2025.1.0
-  ****** Build date   : May 14 2025-03:15:27
-    **** Build number : 2025.1.1747163727
-      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
-      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
-
-
-
-connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 2843.059 ; gain = 0.000
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319A4394AA
-set_property PROGRAM.FILE {C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+[Sat Dec 13 13:39:35 2025] Launched impl_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/runme.log
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-[Mon Dec  8 03:08:41 2025] Launched synth_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/runme.log
-[Mon Dec  8 03:08:41 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/runme.log
-close_hw_manager
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-ERROR: [Common 17-180] Spawn failed: 操作順利完成。
-
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-[Mon Dec  8 03:53:19 2025] Launched synth_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/runme.log
-[Mon Dec  8 03:53:19 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/runme.log
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1
-
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-[Mon Dec  8 03:53:50 2025] Launched synth_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/runme.log
-[Mon Dec  8 03:53:50 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/runme.log
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. PID not specified
-
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-[Mon Dec  8 03:54:05 2025] Launched synth_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/runme.log
-[Mon Dec  8 03:54:05 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/runme.log
-open_run impl_1
-INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 3614.375 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 210 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2025.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 3698.453 ; gain = 0.523
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-INFO: [Designutils 20-5722] Start Reading Physical Databases.
-Reading placement.
-Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3831.770 ; gain = 0.000
-Reading placer database...
-Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 3831.770 ; gain = 0.000
-Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 3831.770 ; gain = 0.000
-Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3831.770 ; gain = 0.000
-Reading routing.
-Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 3831.770 ; gain = 0.000
-Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 3831.770 ; gain = 0.000
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 3831.770 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3831.770 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 109 instances were transformed.
-  RAM128X1S => RAM128X1S (MUXF7, RAMS64E(x2)): 19 instances
-  RAM16X1S => RAM32X1S (RAMS32): 11 instances
-  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 68 instances
-  RAM32X1S => RAM32X1S (RAMS32): 11 instances
-
-open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 3831.770 ; gain = 406.602
-CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
-launch_runs impl_1 -jobs 16
-[Mon Dec  8 04:08:58 2025] Launched synth_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/runme.log
-[Mon Dec  8 04:08:58 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/runme.log
-close_design
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-open_run impl_1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 3831.770 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 216 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2025.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 3831.770 ; gain = 0.000
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-INFO: [Designutils 20-5722] Start Reading Physical Databases.
-Reading placement.
-Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3831.770 ; gain = 0.000
-Reading placer database...
-Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 3831.770 ; gain = 0.000
-Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 3831.770 ; gain = 0.000
-Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3831.770 ; gain = 0.000
-Reading routing.
-Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 3831.770 ; gain = 0.000
-Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 3831.770 ; gain = 0.000
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 3831.770 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3831.770 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 109 instances were transformed.
-  RAM128X1S => RAM128X1S (MUXF7, RAMS64E(x2)): 19 instances
-  RAM16X1S => RAM32X1S (RAMS32): 11 instances
-  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 68 instances
-  RAM32X1S => RAM32X1S (RAMS32): 11 instances
-
-open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 3831.770 ; gain = 0.000
-CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
-close_design
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-[Mon Dec  8 04:22:08 2025] Launched synth_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/runme.log
-[Mon Dec  8 04:22:08 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/runme.log
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1
-
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-[Mon Dec  8 04:23:43 2025] Launched synth_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/runme.log
-[Mon Dec  8 04:23:43 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/runme.log
-open_hw_manager
-connect_hw_server -allow_non_jtag
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-2222] Launching hw_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-****** Xilinx hw_server v2025.1
-  **** Build date : May  6 2025 at 09:15:36
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-
-
-INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
-INFO: [Labtools 27-3417] Launching cs_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-
-******** Xilinx cs_server v2025.1.0
-  ****** Build date   : May 14 2025-03:15:27
-    **** Build number : 2025.1.1747163727
-      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
-      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
-
-
-
-connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 3831.770 ; gain = 0.000
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319A4394AA
-set_property PROGRAM.FILE {C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-[Mon Dec  8 04:27:21 2025] Launched synth_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/runme.log
-[Mon Dec  8 04:27:21 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/runme.log
+INFO: [Project 1-1161] Replacing file C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+[Sat Dec 13 13:47:57 2025] Launched synth_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/runme.log
+[Sat Dec 13 13:47:57 2025] Launched impl_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/runme.log
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-[Mon Dec  8 04:38:29 2025] Launched synth_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/runme.log
-[Mon Dec  8 04:38:29 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-ERROR: [Common 17-180] Spawn failed: 操作順利完成。
-
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-[Mon Dec  8 04:44:29 2025] Launched synth_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/runme.log
-[Mon Dec  8 04:44:29 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/runme.log
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-[Mon Dec  8 04:48:11 2025] Launched synth_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/runme.log
-[Mon Dec  8 04:48:11 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/runme.log
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-[Mon Dec  8 04:51:24 2025] Launched synth_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/runme.log
-[Mon Dec  8 04:51:24 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/runme.log
-close_hw_manager
-open_hw_manager
-connect_hw_server -allow_non_jtag
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
-INFO: [Labtools 27-3417] Launching cs_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-
-******** Xilinx cs_server v2025.1.0
-  ****** Build date   : May 14 2025-03:15:27
-    **** Build number : 2025.1.1747163727
-      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
-      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
-
-
-
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319A4394AA
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-[Mon Dec  8 04:54:45 2025] Launched synth_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/runme.log
-[Mon Dec  8 04:54:45 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-[Mon Dec  8 05:06:31 2025] Launched synth_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/runme.log
-[Mon Dec  8 05:06:31 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/runme.log
+INFO: [Project 1-1161] Replacing file C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+[Sat Dec 13 13:56:54 2025] Launched synth_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/runme.log
+[Sat Dec 13 13:56:54 2025] Launched impl_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/runme.log
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-undo
-INFO: [Common 17-17] undo 'set_property PROGRAM.FILE {C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]'
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-[Mon Dec  8 05:28:00 2025] Launched synth_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/runme.log
-[Mon Dec  8 05:28:00 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/runme.log
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210319A438D4A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319A438D4A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-[Mon Dec  8 06:00:48 2025] Launched synth_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/runme.log
-[Mon Dec  8 06:00:48 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/runme.log
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-reset_run impl_1
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-[Mon Dec  8 06:03:01 2025] Launched synth_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/runme.log
-[Mon Dec  8 06:03:01 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/runme.log
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210319A438D4A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319A438D4A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-ERROR: [Common 17-180] Spawn failed: 操作順利完成。
-
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
 reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-[Mon Dec  8 06:11:58 2025] Launched synth_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/runme.log
-[Mon Dec  8 06:11:58 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/runme.log
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1
-
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\lab10.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\new\random_num.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Shlab_01\Downloads\Dlab-Final-Project-main\Dlab-Final-Project-main\Lab10\lab10\lab10.srcs\sources_1\sram.v:]
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-[Mon Dec  8 06:12:33 2025] Launched synth_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/runme.log
-[Mon Dec  8 06:12:33 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/runme.log
+INFO: [Project 1-1161] Replacing file C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+[Sat Dec 13 14:11:53 2025] Launched synth_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/runme.log
+[Sat Dec 13 14:11:53 2025] Launched impl_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210319A438D4A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319A438D4A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+[Sat Dec 13 14:23:12 2025] Launched synth_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/runme.log
+[Sat Dec 13 14:23:12 2025] Launched impl_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210319A438D4A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319A438D4A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+[Sat Dec 13 14:37:59 2025] Launched synth_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/runme.log
+[Sat Dec 13 14:37:59 2025] Launched impl_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+[Sat Dec 13 14:56:21 2025] Launched synth_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/runme.log
+[Sat Dec 13 14:56:21 2025] Launched impl_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+[Sat Dec 13 15:12:23 2025] Launched synth_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/runme.log
+[Sat Dec 13 15:12:23 2025] Launched impl_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+[Sat Dec 13 15:12:37 2025] Launched synth_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/runme.log
+[Sat Dec 13 15:12:37 2025] Launched impl_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+[Sat Dec 13 15:26:36 2025] Launched synth_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/runme.log
+[Sat Dec 13 15:26:36 2025] Launched impl_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+[Sat Dec 13 15:35:12 2025] Launched synth_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/runme.log
+[Sat Dec 13 15:35:12 2025] Launched impl_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+[Sat Dec 13 15:57:54 2025] Launched synth_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/runme.log
+[Sat Dec 13 15:57:54 2025] Launched impl_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+[Sat Dec 13 16:09:30 2025] Launched synth_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/runme.log
+[Sat Dec 13 16:09:30 2025] Launched impl_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+[Sat Dec 13 16:11:23 2025] Launched synth_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/runme.log
+[Sat Dec 13 16:11:23 2025] Launched impl_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+[Sat Dec 13 16:24:56 2025] Launched synth_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/runme.log
+[Sat Dec 13 16:24:56 2025] Launched impl_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Sat Dec 13 16:31:48 2025] Launched impl_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp with file C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/lab10.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+[Sat Dec 13 16:33:42 2025] Launched synth_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/runme.log
+[Sat Dec 13 16:33:42 2025] Launched impl_1...
+Run output will be captured here: C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Dec  8 06:18:18 2025...
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 13 16:44:07 2025...

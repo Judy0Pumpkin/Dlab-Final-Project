@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date         : Mon Dec  8 06:13:54 2025
-| Host         : DESKTOP-OHA0S7T running 64-bit major release  (build 9200)
+| Date         : Sat Dec 13 16:35:38 2025
+| Host         : LAPTOP-3VDKB8N4 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file lab10_utilization_synth.rpt -pb lab10_utilization_synth.pb
 | Design       : lab10
 | Device       : xc7a35ticsg324-1L
@@ -28,20 +28,20 @@ Table of Contents
 1. Slice Logic
 --------------
 
-+----------------------------+------+-------+------------+-----------+-------+
-|          Site Type         | Used | Fixed | Prohibited | Available | Util% |
-+----------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*                | 5458 |     0 |          0 |     20800 | 26.24 |
-|   LUT as Logic             | 4316 |     0 |          0 |     20800 | 20.75 |
-|   LUT as Memory            | 1142 |     0 |          0 |      9600 | 11.90 |
-|     LUT as Distributed RAM | 1142 |     0 |            |           |       |
-|     LUT as Shift Register  |    0 |     0 |            |           |       |
-| Slice Registers            | 1671 |     0 |          0 |     41600 |  4.02 |
-|   Register as Flip Flop    | 1671 |     0 |          0 |     41600 |  4.02 |
-|   Register as Latch        |    0 |     0 |          0 |     41600 |  0.00 |
-| F7 Muxes                   |  692 |     0 |          0 |     16300 |  4.25 |
-| F8 Muxes                   |  331 |     0 |          0 |      8150 |  4.06 |
-+----------------------------+------+-------+------------+-----------+-------+
++----------------------------+-------+-------+------------+-----------+-------+
+|          Site Type         |  Used | Fixed | Prohibited | Available | Util% |
++----------------------------+-------+-------+------------+-----------+-------+
+| Slice LUTs*                | 10615 |     0 |          0 |     20800 | 51.03 |
+|   LUT as Logic             |  4767 |     0 |          0 |     20800 | 22.92 |
+|   LUT as Memory            |  5848 |     0 |          0 |      9600 | 60.92 |
+|     LUT as Distributed RAM |  5848 |     0 |            |           |       |
+|     LUT as Shift Register  |     0 |     0 |            |           |       |
+| Slice Registers            |  1734 |     0 |          0 |     41600 |  4.17 |
+|   Register as Flip Flop    |  1734 |     0 |          0 |     41600 |  4.17 |
+|   Register as Latch        |     0 |     0 |          0 |     41600 |  0.00 |
+| F7 Muxes                   |  3129 |     0 |          0 |     16300 | 19.20 |
+| F8 Muxes                   |  1514 |     0 |          0 |      8150 | 18.58 |
++----------------------------+-------+-------+------------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 Warning! LUT value is adjusted to account for LUT combining.
 Warning! For any ECO changes, please run place_design if there are unplaced instances
@@ -61,8 +61,8 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 34    |          Yes |         Set |            - |
-| 1637  |          Yes |       Reset |            - |
+| 36    |          Yes |         Set |            - |
+| 1698  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -85,8 +85,8 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +----------------+------+-------+------------+-----------+-------+
 |    Site Type   | Used | Fixed | Prohibited | Available | Util% |
 +----------------+------+-------+------------+-----------+-------+
-| DSPs           |    2 |     0 |          0 |        90 |  2.22 |
-|   DSP48E1 only |    2 |       |            |           |       |
+| DSPs           |   11 |     0 |          0 |        90 | 12.22 |
+|   DSP48E1 only |   11 |       |            |           |       |
 +----------------+------+-------+------------+-----------+-------+
 
 
@@ -152,22 +152,22 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT6     | 2516 |                 LUT |
-| FDRE     | 1637 |        Flop & Latch |
-| LUT3     | 1205 |                 LUT |
-| RAMS64E  | 1120 |  Distributed Memory |
-| MUXF7    |  692 |               MuxFx |
-| LUT4     |  603 |                 LUT |
-| LUT5     |  439 |                 LUT |
-| MUXF8    |  331 |               MuxFx |
-| LUT2     |  264 |                 LUT |
-| CARRY4   |  104 |          CarryLogic |
-| LUT1     |   34 |                 LUT |
-| FDSE     |   34 |        Flop & Latch |
+| RAMS64E  | 5812 |  Distributed Memory |
+| MUXF7    | 3129 |               MuxFx |
+| LUT6     | 2836 |                 LUT |
+| FDRE     | 1698 |        Flop & Latch |
+| MUXF8    | 1514 |               MuxFx |
+| LUT3     | 1223 |                 LUT |
+| LUT4     |  613 |                 LUT |
+| LUT5     |  548 |                 LUT |
+| LUT2     |  273 |                 LUT |
+| CARRY4   |  112 |          CarryLogic |
+| RAMS32   |   36 |  Distributed Memory |
+| LUT1     |   36 |                 LUT |
+| FDSE     |   36 |        Flop & Latch |
 | OBUF     |   26 |                  IO |
-| RAMS32   |   22 |  Distributed Memory |
+| DSP48E1  |   11 |    Block Arithmetic |
 | IBUF     |   10 |                  IO |
-| DSP48E1  |    2 |    Block Arithmetic |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 

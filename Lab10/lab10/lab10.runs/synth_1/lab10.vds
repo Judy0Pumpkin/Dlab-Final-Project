@@ -3,27 +3,27 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Mon Dec  8 06:12:40 2025
-# Process ID         : 1996
-# Current directory  : C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1
+# Start of session at: Sat Dec 13 16:33:44 2025
+# Process ID         : 12120
+# Current directory  : C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1
 # Command line       : vivado.exe -log lab10.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab10.tcl
-# Log file           : C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/lab10.vds
-# Journal file       : C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1\vivado.jou
-# Running On         : DESKTOP-OHA0S7T
+# Log file           : C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/lab10.vds
+# Journal file       : C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1\vivado.jou
+# Running On         : LAPTOP-3VDKB8N4
 # Platform           : Windows Server 2016 or Windows 10
-# Operating System   : 26200
-# Processor Detail   : AMD Ryzen 7 5700                               
-# CPU Frequency      : 3693 MHz
-# CPU Physical cores : 8
-# CPU Logical cores  : 16
-# Host memory        : 17041 MB
-# Swap memory        : 1259 MB
-# Total Virtual      : 18301 MB
-# Available Virtual  : 3710 MB
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 7 155H
+# CPU Frequency      : 2995 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 22
+# Host memory        : 16866 MB
+# Swap memory        : 20401 MB
+# Total Virtual      : 37267 MB
+# Available Virtual  : 12776 MB
 #-----------------------------------------------------------
 source lab10.tcl -notrace
-Command: read_checkpoint -auto_incremental -incremental C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp for incremental synthesis
+Command: read_checkpoint -auto_incremental -incremental C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/utils_1/imports/synth_1/lab10.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top lab10 -part xc7a35ticsg324-1L
 Starting synth_design
@@ -34,168 +34,230 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 19232
+INFO: [Synth 8-7075] Helper process launched with PID 9988
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1183.520 ; gain = 494.371
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1186.324 ; gain = 494.078
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'lab10' [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:6]
-INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/new/debounce.v:21]
+INFO: [Synth 8-6157] synthesizing module 'lab10' [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:6]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/new/debounce.v:21]
 	Parameter DEBOUNCE_PERIOD bound to: 2000000 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'debounce' (0#1) [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/new/debounce.v:21]
-INFO: [Synth 8-6157] synthesizing module 'sram' [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/sram.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (0#1) [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/new/debounce.v:21]
+INFO: [Synth 8-6157] synthesizing module 'sram' [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/sram.v:8]
 	Parameter DATA_WIDTH bound to: 12 - type: integer 
 	Parameter ADDR_WIDTH bound to: 18 - type: integer 
 	Parameter RAM_SIZE bound to: 1200 - type: integer 
 	Parameter MEM_FILE bound to: skin.mem - type: string 
-INFO: [Synth 8-3876] $readmem data file 'skin.mem' is read successfully [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/sram.v:25]
-INFO: [Synth 8-6155] done synthesizing module 'sram' (0#1) [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/sram.v:8]
-INFO: [Synth 8-6157] synthesizing module 'sram__parameterized0' [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/sram.v:8]
+INFO: [Synth 8-3876] $readmem data file 'skin.mem' is read successfully [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/sram.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'sram' (0#1) [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/sram.v:8]
+INFO: [Synth 8-6157] synthesizing module 'sram__parameterized0' [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/sram.v:8]
 	Parameter DATA_WIDTH bound to: 12 - type: integer 
 	Parameter ADDR_WIDTH bound to: 18 - type: integer 
 	Parameter RAM_SIZE bound to: 400 - type: integer 
 	Parameter MEM_FILE bound to: fruit.mem - type: string 
-INFO: [Synth 8-3876] $readmem data file 'fruit.mem' is read successfully [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/sram.v:25]
-INFO: [Synth 8-6155] done synthesizing module 'sram__parameterized0' (0#1) [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/sram.v:8]
-INFO: [Synth 8-6157] synthesizing module 'sram__parameterized1' [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/sram.v:8]
+INFO: [Synth 8-3876] $readmem data file 'fruit.mem' is read successfully [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/sram.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'sram__parameterized0' (0#1) [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/sram.v:8]
+INFO: [Synth 8-6157] synthesizing module 'sram__parameterized1' [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/sram.v:8]
 	Parameter DATA_WIDTH bound to: 12 - type: integer 
 	Parameter ADDR_WIDTH bound to: 18 - type: integer 
 	Parameter RAM_SIZE bound to: 1200 - type: integer 
 	Parameter MEM_FILE bound to: score_text.mem - type: string 
-INFO: [Synth 8-3876] $readmem data file 'score_text.mem' is read successfully [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/sram.v:25]
-INFO: [Synth 8-6155] done synthesizing module 'sram__parameterized1' (0#1) [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/sram.v:8]
-INFO: [Synth 8-6157] synthesizing module 'sram__parameterized2' [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/sram.v:8]
+INFO: [Synth 8-3876] $readmem data file 'score_text.mem' is read successfully [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/sram.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'sram__parameterized1' (0#1) [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/sram.v:8]
+INFO: [Synth 8-6157] synthesizing module 'sram__parameterized2' [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/sram.v:8]
 	Parameter DATA_WIDTH bound to: 12 - type: integer 
 	Parameter ADDR_WIDTH bound to: 18 - type: integer 
 	Parameter RAM_SIZE bound to: 3600 - type: integer 
 	Parameter MEM_FILE bound to: score_num.mem - type: string 
-INFO: [Synth 8-3876] $readmem data file 'score_num.mem' is read successfully [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/sram.v:25]
-INFO: [Synth 8-6155] done synthesizing module 'sram__parameterized2' (0#1) [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/sram.v:8]
-INFO: [Synth 8-6157] synthesizing module 'sram__parameterized3' [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/sram.v:8]
+INFO: [Synth 8-3876] $readmem data file 'score_num.mem' is read successfully [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/sram.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'sram__parameterized2' (0#1) [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/sram.v:8]
+INFO: [Synth 8-6157] synthesizing module 'sram__parameterized3' [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/sram.v:8]
 	Parameter DATA_WIDTH bound to: 12 - type: integer 
 	Parameter ADDR_WIDTH bound to: 18 - type: integer 
 	Parameter RAM_SIZE bound to: 400 - type: integer 
 	Parameter MEM_FILE bound to: obstacle.mem - type: string 
-INFO: [Synth 8-3876] $readmem data file 'obstacle.mem' is read successfully [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/sram.v:25]
-INFO: [Synth 8-6155] done synthesizing module 'sram__parameterized3' (0#1) [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/sram.v:8]
-INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/vga_sync.v:19]
-INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (0#1) [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/vga_sync.v:19]
-INFO: [Synth 8-6157] synthesizing module 'clk_divider' [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/clk_divider.v:21]
+INFO: [Synth 8-3876] $readmem data file 'obstacle.mem' is read successfully [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/sram.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'sram__parameterized3' (0#1) [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/sram.v:8]
+INFO: [Synth 8-6157] synthesizing module 'sram__parameterized4' [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/sram.v:8]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 13083 - type: integer 
+	Parameter MEM_FILE bound to: gamestart.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'gamestart.mem' is read successfully [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/sram.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'sram__parameterized4' (0#1) [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/sram.v:8]
+INFO: [Synth 8-6157] synthesizing module 'sram__parameterized5' [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/sram.v:8]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 2736 - type: integer 
+	Parameter MEM_FILE bound to: map1.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'map1.mem' is read successfully [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/sram.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'sram__parameterized5' (0#1) [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/sram.v:8]
+INFO: [Synth 8-6157] synthesizing module 'sram__parameterized6' [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/sram.v:8]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 2736 - type: integer 
+	Parameter MEM_FILE bound to: map2.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'map2.mem' is read successfully [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/sram.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'sram__parameterized6' (0#1) [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/sram.v:8]
+INFO: [Synth 8-6157] synthesizing module 'sram__parameterized7' [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/sram.v:8]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 6888 - type: integer 
+	Parameter MEM_FILE bound to: gameover.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'gameover.mem' is read successfully [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/sram.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'sram__parameterized7' (0#1) [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/sram.v:8]
+INFO: [Synth 8-6157] synthesizing module 'sram__parameterized8' [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/sram.v:8]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 3843 - type: integer 
+	Parameter MEM_FILE bound to: choose.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'choose.mem' is read successfully [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/sram.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'sram__parameterized8' (0#1) [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/sram.v:8]
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/vga_sync.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (0#1) [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/vga_sync.v:19]
+INFO: [Synth 8-6157] synthesizing module 'clk_divider' [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/clk_divider.v:21]
 	Parameter divider bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'clk_divider' (0#1) [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/clk_divider.v:21]
-INFO: [Synth 8-6157] synthesizing module 'uart' [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/new/uart.v:31]
-INFO: [Synth 8-6155] done synthesizing module 'uart' (0#1) [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/new/uart.v:31]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:352]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:393]
-WARNING: [Synth 8-6090] variable 'snake_y' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:394]
+INFO: [Synth 8-6155] done synthesizing module 'clk_divider' (0#1) [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/clk_divider.v:21]
+INFO: [Synth 8-6157] synthesizing module 'uart' [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/new/uart.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'uart' (0#1) [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/new/uart.v:31]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:450]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:491]
+WARNING: [Synth 8-6090] variable 'snake_y' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:492]
 INFO: [Common 17-14] Message 'Synth 8-6090' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-6157] synthesizing module 'random_num' [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/new/random_num.v:25]
+INFO: [Synth 8-6157] synthesizing module 'random_num' [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/new/random_num.v:25]
 	Parameter mod bound to: 14 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'random_num' (0#1) [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/new/random_num.v:25]
-INFO: [Synth 8-6157] synthesizing module 'random_num__parameterized0' [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/new/random_num.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'random_num' (0#1) [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/new/random_num.v:25]
+INFO: [Synth 8-6157] synthesizing module 'random_num__parameterized0' [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/new/random_num.v:25]
 	Parameter mod bound to: 10 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'random_num__parameterized0' (0#1) [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/new/random_num.v:25]
-INFO: [Synth 8-6157] synthesizing module 'LCD_module' [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/new/lcd.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'LCD_module' (0#1) [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/new/lcd.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'lab10' (0#1) [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/sources_1/lab10.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'random_num__parameterized0' (0#1) [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/new/random_num.v:25]
+INFO: [Synth 8-6157] synthesizing module 'LCD_module' [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/new/lcd.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'LCD_module' (0#1) [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/new/lcd.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'lab10' (0#1) [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/sources_1/lab10.v:6]
 WARNING: [Synth 8-3917] design lab10 has port uart_tx driven by constant 1
+WARNING: [Synth 8-7129] Port addr[17] in module sram__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[16] in module sram__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[15] in module sram__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[14] in module sram__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[13] in module sram__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[12] in module sram__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[17] in module sram__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[16] in module sram__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[15] in module sram__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[14] in module sram__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[13] in module sram__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[17] in module sram__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[16] in module sram__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[15] in module sram__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[14] in module sram__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[13] in module sram__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[12] in module sram__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[17] in module sram__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[16] in module sram__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[15] in module sram__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[14] in module sram__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[13] in module sram__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[12] in module sram__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[17] in module sram__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[16] in module sram__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[15] in module sram__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[14] in module sram__parameterized4 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port addr[17] in module sram__parameterized3 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port addr[16] in module sram__parameterized3 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port addr[15] in module sram__parameterized3 is either unconnected or has no load
@@ -236,50 +298,50 @@ WARNING: [Synth 8-7129] Port addr[12] in module sram is either unconnected or ha
 WARNING: [Synth 8-7129] Port addr[11] in module sram is either unconnected or has no load
 WARNING: [Synth 8-7129] Port usr_sw[3] in module lab10 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1405.355 ; gain = 716.207
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1424.449 ; gain = 732.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1405.355 ; gain = 716.207
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1424.449 ; gain = 732.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1405.355 ; gain = 716.207
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1424.449 ; gain = 732.203
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1405.355 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1424.449 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/constrs_1/lab10.xdc]
-Finished Parsing XDC File [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/constrs_1/lab10.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.srcs/constrs_1/lab10.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab10_propImpl.xdc].
+Parsing XDC File [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/constrs_1/lab10.xdc]
+Finished Parsing XDC File [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/constrs_1/lab10.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.srcs/constrs_1/lab10.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab10_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/lab10_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1465.500 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1479.500 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1465.500 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1479.500 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1465.500 ; gain = 776.352
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1479.500 ; gain = 787.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35ticsg324-1L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1465.500 ; gain = 776.352
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1479.500 ; gain = 787.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1465.500 ; gain = 776.352
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1479.500 ; gain = 787.254
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'game_state_reg' in module 'lab10'
 ---------------------------------------------------------------------------------------------------
@@ -291,13 +353,14 @@ INFO: [Synth 8-802] inferred FSM for state register 'game_state_reg' in module '
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'game_state_reg' using encoding 'one-hot' in module 'lab10'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1465.500 ; gain = 776.352
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1479.500 ; gain = 787.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   3 Input   18 Bit       Adders := 2     
 	   2 Input   13 Bit       Adders := 1     
 	   2 Input   11 Bit       Adders := 2     
 	   2 Input   10 Bit       Adders := 2     
@@ -308,23 +371,28 @@ Detailed RTL Component Info :
 +---XORs : 
 	   4 Input      1 Bit         XORs := 2     
 +---Registers : 
-	               12 Bit    Registers := 7     
+	               12 Bit    Registers := 12    
 	               11 Bit    Registers := 2     
 	               10 Bit    Registers := 2     
 	                8 Bit    Registers := 9     
 	                7 Bit    Registers := 1     
 	                6 Bit    Registers := 204   
-	                4 Bit    Registers := 14    
+	                4 Bit    Registers := 16    
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 4     
 	                1 Bit    Registers := 17    
 +---RAMs : 
+	             153K Bit	(13083 X 12 bit)          RAMs := 1     
+	              80K Bit	(6888 X 12 bit)          RAMs := 1     
+	              45K Bit	(3843 X 12 bit)          RAMs := 1     
 	              42K Bit	(3600 X 12 bit)          RAMs := 1     
+	              32K Bit	(2736 X 12 bit)          RAMs := 2     
 	              14K Bit	(1200 X 12 bit)          RAMs := 2     
 	               4K Bit	(400 X 12 bit)          RAMs := 2     
 +---Muxes : 
-	   2 Input   12 Bit        Muxes := 11    
-	   3 Input   12 Bit        Muxes := 1     
+	   2 Input   18 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 17    
+	   3 Input   12 Bit        Muxes := 2     
 	   4 Input   11 Bit        Muxes := 1     
 	   2 Input   11 Bit        Muxes := 4     
 	   8 Input   11 Bit        Muxes := 1     
@@ -338,19 +406,21 @@ Detailed RTL Component Info :
 	   4 Input    4 Bit        Muxes := 1     
 	   8 Input    4 Bit        Muxes := 1     
 	  13 Input    4 Bit        Muxes := 1     
-	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   3 Input    4 Bit        Muxes := 3     
 	   3 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 1     
 	   7 Input    2 Bit        Muxes := 1     
 	   2 Input    2 Bit        Muxes := 5     
-	   3 Input    2 Bit        Muxes := 3     
+	   3 Input    2 Bit        Muxes := 4     
 	   5 Input    2 Bit        Muxes := 1     
-	   4 Input    2 Bit        Muxes := 3     
+	   4 Input    2 Bit        Muxes := 2     
 	   2 Input    1 Bit        Muxes := 832   
 	   4 Input    1 Bit        Muxes := 5     
 	   8 Input    1 Bit        Muxes := 2     
 	  13 Input    1 Bit        Muxes := 2     
 	   5 Input    1 Bit        Muxes := 3     
-	   3 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -370,12 +440,35 @@ WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 DSP Report: Generating DSP score_text_addr0, operation Mode is: (D+(A:0x3ffffff5))*(B:0x14).
 DSP Report: operator score_text_addr0 is absorbed into DSP score_text_addr0.
 DSP Report: operator score_text_addr1 is absorbed into DSP score_text_addr0.
+DSP Report: Generating DSP start_addr0, operation Mode is: (D+(A:0x3fffffd8))*(B:0x10b).
+DSP Report: operator start_addr0 is absorbed into DSP start_addr0.
+DSP Report: operator start_addr1 is absorbed into DSP start_addr0.
+DSP Report: Generating DSP start_addr, operation Mode is: PCIN+(A:0x0):B+(C:0x3fe6).
+DSP Report: operator start_addr is absorbed into DSP start_addr.
+DSP Report: Generating DSP map1_img_addr0, operation Mode is: (D+(A:0x3fffff74))*(B:0x48).
+DSP Report: operator map1_img_addr0 is absorbed into DSP map1_img_addr0.
+DSP Report: operator map1_img_addr1 is absorbed into DSP map1_img_addr0.
+DSP Report: Generating DSP over_addr0, operation Mode is: (D+(A:0x3fffff9c))*(B:0xf6).
+DSP Report: operator over_addr0 is absorbed into DSP over_addr0.
+DSP Report: operator over_addr1 is absorbed into DSP over_addr0.
+DSP Report: Generating DSP over_addr, operation Mode is: PCIN+(A:0x0):B+(C:0x1fdb).
+DSP Report: operator over_addr is absorbed into DSP over_addr.
+DSP Report: Generating DSP choose_addr0, operation Mode is: (D+(A:0x3fffff2e))*(B:0xb7).
+DSP Report: operator choose_addr0 is absorbed into DSP choose_addr0.
+DSP Report: operator choose_addr1 is absorbed into DSP choose_addr0.
+DSP Report: Generating DSP choose_addr, operation Mode is: PCIN+(A:0x0):B+(C:0xffb).
+DSP Report: operator choose_addr is absorbed into DSP choose_addr.
 DSP Report: Generating DSP score0, operation Mode is: C+(D+A2)*(B:0xa).
 DSP Report: register score_10_reg is absorbed into DSP score0.
 DSP Report: register score_10_reg is absorbed into DSP score0.
 DSP Report: operator score_100 is absorbed into DSP score0.
 DSP Report: operator score0 is absorbed into DSP score0.
 DSP Report: operator score1 is absorbed into DSP score0.
+DSP Report: Generating DSP skin_addr2, operation Mode is: (D+(A:0x3fffff6a))*(B:0x14).
+DSP Report: operator skin_addr2 is absorbed into DSP skin_addr2.
+DSP Report: operator skin_addr3 is absorbed into DSP skin_addr2.
+DSP Report: Generating DSP skin_addr0, operation Mode is: PCIN+(A:0x0):B+(C:0x6e8).
+DSP Report: operator skin_addr0 is absorbed into DSP skin_addr0.
 WARNING: [Synth 8-3917] design lab10 has port uart_tx driven by constant 1
 WARNING: [Synth 8-7129] Port usr_sw[3] in module lab10 is either unconnected or has no load
 WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "lab10/ram_fruit/RAM_reg",trying to implement using LUTRAM
@@ -384,39 +477,72 @@ WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "la
 WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "lab10/ram_score_text/RAM_reg",trying to implement using LUTRAM
 WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "lab10/ram_score_num/RAM_reg",trying to implement using LUTRAM
 WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "lab10/ram_score_num/RAM_reg",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "lab10/ram_start/RAM_reg",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "lab10/ram_start/RAM_reg",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "lab10/ram_map1_img/RAM_reg",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "lab10/ram_map1_img/RAM_reg",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "lab10/ram_map2_img/RAM_reg",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "lab10/ram_map2_img/RAM_reg",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "lab10/ram_over/RAM_reg",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "lab10/ram_over/RAM_reg",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "lab10/ram_choose/RAM_reg",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "lab10/ram_choose/RAM_reg",trying to implement using LUTRAM
 WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "lab10/ram_skin/RAM_reg",trying to implement using LUTRAM
 WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "lab10/ram_skin/RAM_reg",trying to implement using LUTRAM
 WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "lab10/ram_obstacle/RAM_reg",trying to implement using LUTRAM
 WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "lab10/ram_obstacle/RAM_reg",trying to implement using LUTRAM
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1763.562 ; gain = 1074.414
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 1801.254 ; gain = 1109.008
 ---------------------------------------------------------------------------------
- Sort Area is  score0_2 : 0 0 : 105 105 : Used 1 time 0
+ Sort Area is  start_addr0_2 : 0 0 : 416 482 : Used 1 time 0
+ Sort Area is  start_addr0_2 : 0 1 : 66 482 : Used 1 time 0
+ Sort Area is  over_addr0_7 : 0 0 : 405 471 : Used 1 time 0
+ Sort Area is  over_addr0_7 : 0 1 : 66 471 : Used 1 time 0
+ Sort Area is  choose_addr0_a : 0 0 : 267 330 : Used 1 time 0
+ Sort Area is  choose_addr0_a : 0 1 : 63 330 : Used 1 time 0
+ Sort Area is  map1_img_addr0_5 : 0 0 : 130 130 : Used 1 time 0
+ Sort Area is  skin_addr2_f : 0 0 : 66 114 : Used 1 time 0
+ Sort Area is  skin_addr2_f : 0 1 : 48 114 : Used 1 time 0
+ Sort Area is  score0_d : 0 0 : 105 105 : Used 1 time 0
  Sort Area is  score_text_addr0_0 : 0 0 : 64 64 : Used 1 time 0
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
 Distributed RAM: Preliminary Mapping Report (see note below)
-+------------+------------------------+-----------+----------------------+------------------------------------------------------------+
-|Module Name | RTL Object             | Inference | Size (Depth x Width) | Primitives                                                 | 
-+------------+------------------------+-----------+----------------------+------------------------------------------------------------+
-|lab10       | ram_fruit/RAM_reg      | Implied   | 512 x 12             | RAM16X1S x 12 RAM128X1S x 12 RAM256X1S x 12                | 
-|lab10       | ram_score_text/RAM_reg | Implied   | 2 K x 12             | RAM16X1S x 12 RAM32X1S x 12 RAM128X1S x 12 RAM256X1S x 48  | 
-|lab10       | ram_score_num/RAM_reg  | Implied   | 4 K x 12             | RAM16X1S x 12 RAM256X1S x 168                              | 
-|lab10       | ram_skin/RAM_reg       | Implied   | 2 K x 12             | RAM16X1S x 12 RAM32X1S x 12 RAM128X1S x 12 RAM256X1S x 48  | 
-|lab10       | ram_obstacle/RAM_reg   | Implied   | 512 x 12             | RAM16X1S x 12 RAM128X1S x 12 RAM256X1S x 12                | 
-+------------+------------------------+-----------+----------------------+------------------------------------------------------------+
++------------+------------------------+-----------+----------------------+---------------------------------------------------------------------------+
+|Module Name | RTL Object             | Inference | Size (Depth x Width) | Primitives                                                                | 
++------------+------------------------+-----------+----------------------+---------------------------------------------------------------------------+
+|lab10       | ram_fruit/RAM_reg      | Implied   | 512 x 12             | RAM16X1S x 12 RAM128X1S x 12 RAM256X1S x 12                               | 
+|lab10       | ram_score_text/RAM_reg | Implied   | 2 K x 12             | RAM16X1S x 12 RAM32X1S x 12 RAM128X1S x 12 RAM256X1S x 48                 | 
+|lab10       | ram_score_num/RAM_reg  | Implied   | 4 K x 12             | RAM16X1S x 12 RAM256X1S x 168                                             | 
+|lab10       | ram_start/RAM_reg      | Implied   | 16 K x 12            | RAM16X1S x 24 RAM256X1S x 612                                             | 
+|lab10       | ram_map1_img/RAM_reg   | Implied   | 4 K x 12             | RAM16X1S x 12 RAM32X1S x 12 RAM128X1S x 12 RAM256X1S x 120                | 
+|lab10       | ram_map2_img/RAM_reg   | Implied   | 4 K x 12             | RAM16X1S x 12 RAM32X1S x 12 RAM128X1S x 12 RAM256X1S x 120                | 
+|lab10       | ram_over/RAM_reg       | Implied   | 8 K x 12             | RAM16X1S x 12 RAM32X1S x 12 RAM64X1S x 12 RAM128X1S x 12 RAM256X1S x 312  | 
+|lab10       | ram_choose/RAM_reg     | Implied   | 4 K x 12             | RAM16X1S x 12 RAM256X1S x 180                                             | 
+|lab10       | ram_skin/RAM_reg       | Implied   | 2 K x 12             | RAM16X1S x 12 RAM32X1S x 12 RAM128X1S x 12 RAM256X1S x 48                 | 
+|lab10       | ram_obstacle/RAM_reg   | Implied   | 512 x 12             | RAM16X1S x 12 RAM128X1S x 12 RAM256X1S x 12                               | 
++------------+------------------------+-----------+----------------------+---------------------------------------------------------------------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
 
 DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
-+------------+-----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name | DSP Mapping                 | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+------------+-----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|lab10       | (D+(A:0x3ffffff5))*(B:0x14) | 11     | 5      | -      | 5      | 16     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
-|lab10       | C+(D+A2)*(B:0xa)            | 8      | 4      | 8      | 2      | 8      | 1    | 0    | 0    | 0    | 1     | 0    | 0    | 
-+------------+-----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
++------------+------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping                  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|lab10       | (D+(A:0x3ffffff5))*(B:0x14)  | 11     | 5      | -      | 5      | 16     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|lab10       | (D+(A:0x3fffffd8))*(B:0x10b) | 14     | 9      | -      | 8      | 23     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|lab10       | PCIN+(A:0x0):B+(C:0x3fe6)    | 30     | 9      | 14     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|lab10       | (D+(A:0x3fffff74))*(B:0x48)  | 12     | 7      | -      | 8      | 19     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|lab10       | (D+(A:0x3fffff9c))*(B:0xf6)  | 13     | 8      | -      | 8      | 21     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|lab10       | PCIN+(A:0x0):B+(C:0x1fdb)    | 30     | 9      | 13     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|lab10       | (D+(A:0x3fffff2e))*(B:0xb7)  | 12     | 8      | -      | 8      | 20     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|lab10       | PCIN+(A:0x0):B+(C:0xffb)     | 30     | 9      | 12     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|lab10       | C+(D+A2)*(B:0xa)             | 8      | 4      | 8      | 2      | 8      | 1    | 0    | 0    | 0    | 1     | 0    | 0    | 
+|lab10       | (D+(A:0x3fffff6a))*(B:0x14)  | 11     | 5      | -      | 8      | 16     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|lab10       | PCIN+(A:0x0):B+(C:0x6e8)     | 30     | 9      | 11     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
@@ -426,28 +552,33 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1763.562 ; gain = 1074.414
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:01:05 . Memory (MB): peak = 1801.254 ; gain = 1109.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1928.125 ; gain = 1238.977
+Finished Timing Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:23 . Memory (MB): peak = 1965.930 ; gain = 1273.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
 Distributed RAM: Final Mapping Report
-+------------+------------------------+-----------+----------------------+------------------------------------------------------------+
-|Module Name | RTL Object             | Inference | Size (Depth x Width) | Primitives                                                 | 
-+------------+------------------------+-----------+----------------------+------------------------------------------------------------+
-|lab10       | ram_fruit/RAM_reg      | Implied   | 512 x 12             | RAM16X1S x 12 RAM128X1S x 12 RAM256X1S x 12                | 
-|lab10       | ram_score_text/RAM_reg | Implied   | 2 K x 12             | RAM16X1S x 12 RAM32X1S x 12 RAM128X1S x 12 RAM256X1S x 48  | 
-|lab10       | ram_score_num/RAM_reg  | Implied   | 4 K x 12             | RAM16X1S x 12 RAM256X1S x 168                              | 
-|lab10       | ram_skin/RAM_reg       | Implied   | 2 K x 12             | RAM16X1S x 12 RAM32X1S x 12 RAM128X1S x 12 RAM256X1S x 48  | 
-|lab10       | ram_obstacle/RAM_reg   | Implied   | 512 x 12             | RAM16X1S x 12 RAM128X1S x 12 RAM256X1S x 12                | 
-+------------+------------------------+-----------+----------------------+------------------------------------------------------------+
++------------+------------------------+-----------+----------------------+---------------------------------------------------------------------------+
+|Module Name | RTL Object             | Inference | Size (Depth x Width) | Primitives                                                                | 
++------------+------------------------+-----------+----------------------+---------------------------------------------------------------------------+
+|lab10       | ram_fruit/RAM_reg      | Implied   | 512 x 12             | RAM16X1S x 12 RAM128X1S x 12 RAM256X1S x 12                               | 
+|lab10       | ram_score_text/RAM_reg | Implied   | 2 K x 12             | RAM16X1S x 12 RAM32X1S x 12 RAM128X1S x 12 RAM256X1S x 48                 | 
+|lab10       | ram_score_num/RAM_reg  | Implied   | 4 K x 12             | RAM16X1S x 12 RAM256X1S x 168                                             | 
+|lab10       | ram_start/RAM_reg      | Implied   | 16 K x 12            | RAM16X1S x 24 RAM256X1S x 612                                             | 
+|lab10       | ram_map1_img/RAM_reg   | Implied   | 4 K x 12             | RAM16X1S x 12 RAM32X1S x 12 RAM128X1S x 12 RAM256X1S x 120                | 
+|lab10       | ram_map2_img/RAM_reg   | Implied   | 4 K x 12             | RAM16X1S x 12 RAM32X1S x 12 RAM128X1S x 12 RAM256X1S x 120                | 
+|lab10       | ram_over/RAM_reg       | Implied   | 8 K x 12             | RAM16X1S x 12 RAM32X1S x 12 RAM64X1S x 12 RAM128X1S x 12 RAM256X1S x 312  | 
+|lab10       | ram_choose/RAM_reg     | Implied   | 4 K x 12             | RAM16X1S x 12 RAM256X1S x 180                                             | 
+|lab10       | ram_skin/RAM_reg       | Implied   | 2 K x 12             | RAM16X1S x 12 RAM32X1S x 12 RAM128X1S x 12 RAM256X1S x 48                 | 
+|lab10       | ram_obstacle/RAM_reg   | Implied   | 512 x 12             | RAM16X1S x 12 RAM128X1S x 12 RAM256X1S x 12                               | 
++------------+------------------------+-----------+----------------------+---------------------------------------------------------------------------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -456,7 +587,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1928.125 ; gain = 1238.977
+Finished Technology Mapping : Time (s): cpu = 00:01:11 ; elapsed = 00:01:30 . Memory (MB): peak = 1965.930 ; gain = 1273.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -474,49 +605,58 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:00 ; elapsed = 00:01:01 . Memory (MB): peak = 2020.848 ; gain = 1331.699
+Finished IO Insertion : Time (s): cpu = 00:01:15 ; elapsed = 00:01:36 . Memory (MB): peak = 2053.242 ; gain = 1360.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:00 ; elapsed = 00:01:01 . Memory (MB): peak = 2020.848 ; gain = 1331.699
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:15 ; elapsed = 00:01:36 . Memory (MB): peak = 2053.242 ; gain = 1360.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 2020.848 ; gain = 1331.699
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:16 ; elapsed = 00:01:37 . Memory (MB): peak = 2053.242 ; gain = 1360.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 2020.848 ; gain = 1331.699
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:16 ; elapsed = 00:01:37 . Memory (MB): peak = 2053.242 ; gain = 1360.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 2020.848 ; gain = 1331.699
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:16 ; elapsed = 00:01:37 . Memory (MB): peak = 2053.242 ; gain = 1360.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 2020.848 ; gain = 1331.699
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:16 ; elapsed = 00:01:37 . Memory (MB): peak = 2053.242 ; gain = 1360.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
 
 DSP Final Report (the ' indicates corresponding REG is set)
-+------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|lab10       | D+A*B       | 30     | 5      | -      | 5      | 16     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
-|lab10       | C+(D+A')'*B | 8      | 4      | 8      | 25     | 8      | 1    | 0    | 0    | 0    | 1     | 0    | 0    | 
-+------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|lab10       | D+A*B        | 30     | 5      | -      | 5      | 16     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|lab10       | D+A*B        | 30     | 9      | -      | 8      | 0      | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|lab10       | PCIN+A':B'+C | 0      | 9      | -      | -      | 14     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|lab10       | D+A*B        | 30     | 7      | -      | 8      | 19     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|lab10       | D+A*B        | 30     | 8      | -      | 8      | 0      | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|lab10       | PCIN+A':B'+C | 0      | 9      | -      | -      | 13     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|lab10       | D+A*B        | 30     | 8      | -      | 8      | 0      | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|lab10       | PCIN+A':B'+C | 0      | 9      | -      | -      | 12     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|lab10       | C+(D+A')'*B  | 8      | 4      | 8      | 25     | 8      | 1    | 0    | 0    | 0    | 1     | 0    | 0    | 
+|lab10       | D+A*B        | 30     | 5      | -      | 8      | 0      | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|lab10       | PCIN+A':B'+C | 0      | 9      | -      | -      | 11     | 1    | 1    | -    | -    | -     | 0    | 0    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 
 Report BlackBoxes: 
@@ -530,51 +670,51 @@ Report Cell Usage:
 |      |Cell      |Count |
 +------+----------+------+
 |1     |BUFG      |     1|
-|2     |CARRY4    |   104|
-|3     |DSP48E1   |     2|
-|5     |LUT1      |    34|
-|6     |LUT2      |   264|
-|7     |LUT3      |  1205|
-|8     |LUT4      |   603|
-|9     |LUT5      |   439|
-|10    |LUT6      |  2516|
-|11    |MUXF7     |   132|
-|12    |MUXF8     |    62|
-|13    |RAM128X1S |    22|
-|14    |RAM16X1S  |    11|
-|15    |RAM256X1S |   269|
-|16    |RAM32X1S  |    11|
-|17    |FDRE      |  1637|
-|18    |FDSE      |    34|
-|19    |IBUF      |    10|
-|20    |OBUF      |    26|
+|2     |CARRY4    |   112|
+|3     |DSP48E1   |    11|
+|6     |LUT1      |    36|
+|7     |LUT2      |   273|
+|8     |LUT3      |  1223|
+|9     |LUT4      |   613|
+|10    |LUT5      |   548|
+|11    |LUT6      |  2836|
+|12    |MUXF7     |   223|
+|13    |MUXF8     |    84|
+|14    |RAM128X1S |    46|
+|15    |RAM16X1S  |    25|
+|16    |RAM256X1S |  1430|
+|17    |RAM32X1S  |    11|
+|18    |FDRE      |  1698|
+|19    |FDSE      |    36|
+|20    |IBUF      |    10|
+|21    |OBUF      |    26|
 +------+----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 2020.848 ; gain = 1331.699
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:16 ; elapsed = 00:01:37 . Memory (MB): peak = 2053.242 ; gain = 1360.996
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:52 ; elapsed = 00:01:00 . Memory (MB): peak = 2020.848 ; gain = 1271.555
-Synthesis Optimization Complete : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 2020.848 ; gain = 1331.699
+Synthesis finished with 0 errors, 0 critical warnings and 23 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:07 ; elapsed = 00:01:36 . Memory (MB): peak = 2053.242 ; gain = 1305.945
+Synthesis Optimization Complete : Time (s): cpu = 00:01:17 ; elapsed = 00:01:38 . Memory (MB): peak = 2053.242 ; gain = 1360.996
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 2034.148 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 613 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.382 . Memory (MB): peak = 2062.562 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1942 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2037.965 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2067.383 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 313 instances were transformed.
-  RAM128X1S => RAM128X1S (MUXF7, RAMS64E(x2)): 22 instances
-  RAM16X1S => RAM32X1S (RAMS32): 11 instances
-  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 269 instances
+  A total of 1512 instances were transformed.
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E(x2)): 46 instances
+  RAM16X1S => RAM32X1S (RAMS32): 25 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 1430 instances
   RAM32X1S => RAM32X1S (RAMS32): 11 instances
 
-Synth Design complete | Checksum: e6c01d96
+Synth Design complete | Checksum: ebf0102f
 INFO: [Common 17-83] Releasing license: Synthesis
-56 Infos, 153 Warnings, 0 Critical Warnings and 0 Errors encountered.
+71 Infos, 190 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:04 ; elapsed = 00:01:07 . Memory (MB): peak = 2037.965 ; gain = 1535.395
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2037.965 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/lab10.dcp' has been generated.
+synth_design: Time (s): cpu = 00:01:22 ; elapsed = 00:01:47 . Memory (MB): peak = 2067.383 ; gain = 1563.238
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 2067.383 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/lab10.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file lab10_utilization_synth.rpt -pb lab10_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Dec  8 06:13:54 2025...
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 13 16:35:39 2025...

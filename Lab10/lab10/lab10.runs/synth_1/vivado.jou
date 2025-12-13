@@ -3,22 +3,22 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Mon Dec  8 06:12:40 2025
-# Process ID         : 1996
-# Current directory  : C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1
+# Start of session at: Sat Dec 13 16:33:44 2025
+# Process ID         : 12120
+# Current directory  : C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1
 # Command line       : vivado.exe -log lab10.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab10.tcl
-# Log file           : C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1/lab10.vds
-# Journal file       : C:/Users/Shlab_01/Downloads/Dlab-Final-Project-main/Dlab-Final-Project-main/Lab10/lab10/lab10.runs/synth_1\vivado.jou
-# Running On         : DESKTOP-OHA0S7T
+# Log file           : C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1/lab10.vds
+# Journal file       : C:/Users/nicol/Dlab-Final-Project/Lab10/lab10/lab10.runs/synth_1\vivado.jou
+# Running On         : LAPTOP-3VDKB8N4
 # Platform           : Windows Server 2016 or Windows 10
-# Operating System   : 26200
-# Processor Detail   : AMD Ryzen 7 5700                               
-# CPU Frequency      : 3693 MHz
-# CPU Physical cores : 8
-# CPU Logical cores  : 16
-# Host memory        : 17041 MB
-# Swap memory        : 1259 MB
-# Total Virtual      : 18301 MB
-# Available Virtual  : 3710 MB
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 7 155H
+# CPU Frequency      : 2995 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 22
+# Host memory        : 16866 MB
+# Swap memory        : 20401 MB
+# Total Virtual      : 37267 MB
+# Available Virtual  : 12776 MB
 #-----------------------------------------------------------
 source lab10.tcl -notrace
