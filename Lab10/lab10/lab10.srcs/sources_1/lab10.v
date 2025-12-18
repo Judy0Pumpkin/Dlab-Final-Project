@@ -566,15 +566,46 @@ assign next_head_y = (pre_portal_x == portal1_x && pre_portal_y == portal1_y) ? 
                      (pre_portal_x == portal2_x && pre_portal_y == portal2_y) ? portal1_y :
                      pre_portal_y;
 
+reg [1:0] count;
 always @(*) begin
     self_collision_reg = 1'b0;
-    for (i = 1; i < SNAKE_MAX_LEN; i = i + 1) begin
-        if (i < snake_length) begin
-            if (snake_x[0] == snake_x[i] && snake_y[0] == snake_y[i]) begin
-                self_collision_reg = 1'b1;
+    count = count + 1;
+    case (count)
+
+    2'b0 :
+
+        for (i = 1; i <= 25 ; i = i + 1) begin
+            if (i < snake_length) begin
+                if (snake_x[0] == snake_x[i] && snake_y[0] == snake_y[i]) begin
+                    self_collision_reg = 1'b1;
+                end
             end
         end
-    end
+
+    2'b1: for (i = 26; i <=50; i = i + 1) begin
+            if (i < snake_length) begin
+                if (snake_x[0] == snake_x[i] && snake_y[0] == snake_y[i]) begin
+                    self_collision_reg = 1'b1;
+                end
+            end
+        end
+
+    2'b10: for (i = 51; i <=75; i = i + 1) begin
+            if (i < snake_length) begin
+                if (snake_x[0] == snake_x[i] && snake_y[0] == snake_y[i]) begin
+                    self_collision_reg = 1'b1;
+                end
+            end
+        end
+
+    2'b11: for (i = 76; i <= SNAKE_MAX_LEN; i = i + 1) begin
+            if (i < snake_length) begin
+                if (snake_x[0] == snake_x[i] && snake_y[0] == snake_y[i]) begin
+                    self_collision_reg = 1'b1;
+                end
+            end
+        end
+endcase
 end
 
 assign self_collision = self_collision_reg;

@@ -3,8 +3,8 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Thu Dec 18 23:33:38 2025
-# Process ID         : 27604
+# Start of session at: Fri Dec 19 00:12:00 2025
+# Process ID         : 12376
 # Current directory  : C:/Users/Judy/Desktop/NYCU 114/Dlab/final_project/Lab10/lab10/lab10.runs/synth_1
 # Command line       : vivado.exe -log lab10.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab10.tcl
 # Log file           : C:/Users/Judy/Desktop/NYCU 114/Dlab/final_project/Lab10/lab10/lab10.runs/synth_1/lab10.vds
@@ -19,6 +19,5 @@
 # Host memory        : 16369 MB
 # Swap memory        : 18253 MB
 # Total Virtual      : 34623 MB
-# Available Virtual  : 8218 MB
+# Available Virtual  : 10340 MB
 #-----------------------------------------------------------
-source lab10.tcl -notrace
