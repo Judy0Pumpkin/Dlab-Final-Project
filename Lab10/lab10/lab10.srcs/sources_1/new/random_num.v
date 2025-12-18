@@ -22,6 +22,7 @@
 
 //8级斐波那契LFSR（多到1型LFSR）设计
 //同或门作为反馈函数，反馈多项式为 f(x)=x^8 + x^6 + x^5 + x^4 + 1
+(* DONT_TOUCH ="yes" *)
 module random_num
 #(parameter mod = 10)
 (

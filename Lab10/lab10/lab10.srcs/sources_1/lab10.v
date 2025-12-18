@@ -58,7 +58,7 @@ localparam SPEED_FAST   = 27'd33_333_333;
 localparam BOOST_DURATION = 29'd500_000_000; 
 
 localparam TOTAL_SCORE_TEXT_SIZE = 1200;
-localparam TOTAL_SCORE_NUM_SIZE = 3600;
+localparam TOTAL_SCORE_NUM_SIZE = 4000;
 
 localparam OBSTACLE_NUM = 5;
 localparam OBSTACLE_SIZE = 20;
@@ -88,7 +88,7 @@ localparam PREVIEW_Y = 150;
 //========================================================================
 // Signal Declarations
 //========================================================================
-wire [3:0] btn_pressed;
+wire [3:0] btn_pressed, last_btn, now_btn;
 
 wire vga_clk, video_on, pixel_tick;
 wire [9:0] pixel_x, pixel_y;
@@ -137,8 +137,8 @@ reg [5:0] portal2_x, portal2_y;
 wire is_portal1, is_portal2;
 
 reg [7:0] score_10, score_1, score;
-wire [17:0] score_addr_base;
-wire [9:0] score_text_addr_base;
+reg [17:0] score_addr_base;
+
 
 reg [26:0] move_counter;
 wire [26:0] current_speed_limit; 
@@ -172,18 +172,20 @@ wire [17:0] start_addr, map1_img_addr, map2_img_addr, over_addr, choose_addr;
 // Debounce
 //========================================================================
 debounce #(.DEBOUNCE_PERIOD(2_000_000)) btn_db0 (
-    .clk(clk), .btn_input(usr_btn[0]), .btn_output(btn_pressed[0])
+    .clk(clk), .btn_input(usr_btn[0]), .btn_output(now_btn[0])
 );
 debounce #(.DEBOUNCE_PERIOD(2_000_000)) btn_db1 (
-    .clk(clk), .btn_input(usr_btn[1]), .btn_output(btn_pressed[1])
+    .clk(clk), .btn_input(usr_btn[1]), .btn_output(now_btn[1])
 );
 debounce #(.DEBOUNCE_PERIOD(2_000_000)) btn_db2 (
-    .clk(clk), .btn_input(usr_btn[2]), .btn_output(btn_pressed[2])
+    .clk(clk), .btn_input(usr_btn[2]), .btn_output(now_btn[2])
 );
 debounce #(.DEBOUNCE_PERIOD(2_000_000)) btn_db3 (
-    .clk(clk), .btn_input(usr_btn[3]), .btn_output(btn_pressed[3])
+    .clk(clk), .btn_input(usr_btn[3]), .btn_output(now_btn[3])
 );
 
+assign last_btn = now_btn;
+assign btn_pressed = ~last_btn & now_btn; 
 //========================================================================
 // SRAM
 //========================================================================
@@ -411,9 +413,9 @@ always @(posedge clk) begin
         game_state <= STATE_INIT;
     end else begin
         case (game_state)
-            STATE_INIT: if (btn_pressed[0]) game_state <= STATE_PLAYING;
-            STATE_PLAYING: if (self_collision || score == 0) game_state <= STATE_GAMEOVER;
-            STATE_GAMEOVER: if (btn_pressed[0] || received) game_state <= STATE_INIT;
+            STATE_INIT: if (btn_pressed) game_state <= STATE_PLAYING;
+            STATE_PLAYING: if (collision || score == 0) game_state <= STATE_GAMEOVER;
+            STATE_GAMEOVER: if (btn_pressed || received) game_state <= STATE_INIT;
             default:       game_state <= STATE_INIT;
         endcase
     end
@@ -552,8 +554,9 @@ assign move_tick = (move_counter == current_speed_limit - 1);
 assign pre_portal_x = (next_direction == DIR_RIGHT) ? ((snake_x[0] == GRID_W-2) ? 6'd1 : snake_x[0] + 5'd1) :
                       (next_direction == DIR_LEFT)  ? ((snake_x[0] == 6'd1)     ? (GRID_W-2) : snake_x[0] - 5'd1) : snake_x[0];
 
-assign pre_portal_y = (next_direction == DIR_DOWN) ? ((snake_y[0] == GRID_H-2) ? 6'd1 : snake_y[0] + 5'd1) :
-                      (next_direction == DIR_UP)   ? ((snake_y[0] == 6'd1)     ? (GRID_H-2) : snake_y[0] - 5'd1) : snake_y[0];
+assign pre_portal_y = (next_direction == DIR_DOWN) ? (snake_y[0] + 5'd1) :
+                      (next_direction == DIR_UP)   ? (snake_y[0] - 5'd1) : 
+                      snake_y[0];
 
 assign next_head_x = (pre_portal_x == portal1_x && pre_portal_y == portal1_y) ? portal2_x :
                      (pre_portal_x == portal2_x && pre_portal_y == portal2_y) ? portal1_x :
@@ -575,9 +578,10 @@ always @(*) begin
 end
 
 assign self_collision = self_collision_reg;
-assign wall_collision = 1'b0;
-assign obstacle_collision = 1'b0;
-assign collision = wall_collision || obstacle_collision;
+
+assign wall_collision = (snake_y[0] >= GRID_H-1) || (snake_y[0] == 6'd0);
+
+assign collision = wall_collision || self_collision;
 
 always @(*) begin
     is_hitting_obstacle = 1'b0;
@@ -629,7 +633,6 @@ always @(posedge clk) begin
         fruit_y <= 0;
         fruit_eat <= 0;
         fruit_on_field <= 0;
-        lightning_x <= 0; lightning_y <= 0; lightning_eat <= 0; lightning_on_field <= 0;
     end
     else if(game_state == STATE_PLAYING) begin
     
@@ -651,6 +654,14 @@ always @(posedge clk) begin
             end
         end
 
+    end
+end
+
+always @(posedge clk) begin
+    if(~reset_n || game_state == STATE_INIT) begin
+        lightning_x <= 0; lightning_y <= 0; lightning_eat <= 0; lightning_on_field <= 0;
+    end
+    else if(game_state == STATE_PLAYING) begin
         // --- Lightning Logic ---
         if(lightning_eat) begin
             lightning_x <= 0; lightning_y <= 0; lightning_on_field <= 0; lightning_eat <= 0;
@@ -667,7 +678,6 @@ always @(posedge clk) begin
         end
     end
 end
-
 //========================================================================
 // Obstacles
 //========================================================================
@@ -739,9 +749,43 @@ always @(posedge clk) begin
     end
 end
 
-assign score_addr_base = (is_score_num_10)? (score_10 == 1) ? 18'd0400 :
-(score_10 == 2) ? 18'd0800 : (score_10 == 3) ? 18'd1200 :(score_10 == 4) ? 18'd1600 : (score_10 == 5) ? 18'd2000 : (score_10 == 6) ? 18'd2400 : (score_10 == 7) ? 18'd2800 : (score_10 == 8) ? 18'd3200 : (score_10 == 9) ? 18'd3600 : 18'd0000 : (score_1 == 1)  ? 18'd0400 : (score_1 == 2)  ? 18'd0800 : (score_1 == 3)  ? 18'd1200 : (score_1 == 4)  ? 18'd1600 : (score_1 == 5)  ? 18'd2000 : (score_1 == 6)  ? 18'd2400 : (score_1 == 7)  ? 18'd2800 : (score_1 == 8)  ? 18'd3200 : (score_1 == 9)  ? 18'd3600 : 18'd0000 ;
-assign score_text_addr_base = (((pixel_x >> 1) / GRID_SIZE) == 12)? 18'd400: (((pixel_x >> 1) / GRID_SIZE) == 13)? 18'd800: 18'd000;
+
+always @(*) begin
+    if (is_score_num_10) begin
+        case (score_10)
+            0: score_addr_base = 18'd0000;
+            1: score_addr_base = 18'd0400;
+            2: score_addr_base = 18'd0800;
+            3: score_addr_base = 18'd1200;
+            4: score_addr_base = 18'd1600;
+            5: score_addr_base = 18'd2000;
+            6: score_addr_base = 18'd2400;
+            7: score_addr_base = 18'd2800;
+            8: score_addr_base = 18'd3200;
+            9: score_addr_base = 18'd3600;
+            default: score_addr_base = 18'd0000;
+        endcase
+    end
+    
+    else if (is_score_num_1) begin
+        case (score_1)
+            0: score_addr_base = 18'd0000;
+            1: score_addr_base = 18'd0400;
+            2: score_addr_base = 18'd0800;
+            3: score_addr_base = 18'd1200;
+            4: score_addr_base = 18'd1600;
+            5: score_addr_base = 18'd2000;
+            6: score_addr_base = 18'd2400;
+            7: score_addr_base = 18'd2800;
+            8: score_addr_base = 18'd3200;
+            9: score_addr_base = 18'd3600;
+            default: score_addr_base = 18'd0000;
+        endcase
+    end
+    else begin
+        score_addr_base = 18'd0000;
+    end
+end
 
 //========================================================================
 // VGA Rendering
@@ -798,15 +842,30 @@ assign skin_addr = (game_state == STATE_INIT && is_skin_preview)? (skin_addr_bas
 assign fruit_addr = grid_pixel_y * FRUIT_SIZE + grid_pixel_x;
 assign lightning_addr = grid_pixel_y * GRID_SIZE + grid_pixel_x;
 assign portal_addr = grid_pixel_y * GRID_SIZE + grid_pixel_x; // [新增]
-assign score_text_addr = pix_y_half * GRID_SIZE *3 + grid_pixel_x + ((pix_x_half / GRID_SIZE) - 11) * GRID_SIZE;
-assign score_num_addr = (is_score_num_10) ? grid_pixel_y * GRID_SIZE + grid_pixel_x + score_addr_base
-                                            : grid_pixel_y * GRID_SIZE + grid_pixel_x + score_addr_base;
+
+wire [5:0] score_x_offset = (current_grid_x >= 11 && current_grid_x <= 13) ? 
+                            (current_grid_x - 6'd11) : 6'd0;
+
+assign score_text_addr = (18'd0 + grid_pixel_y) * 18'd60 + 
+                         (18'd0 + grid_pixel_x) + 
+                         (18'd0 + score_x_offset) * 18'd20;
+
+
+
+assign score_num_addr = grid_pixel_y * GRID_SIZE + grid_pixel_x + score_addr_base;
+
+                                    
 assign obstacle_addr = grid_pixel_y * GRID_SIZE + grid_pixel_x;
 
 assign {VGA_RED, VGA_GREEN, VGA_BLUE} = rgb_reg;
 
 wire is_start_area = (pix_x_half >= 26 && pix_x_half < 293 && pix_y_half >= 40 && pix_y_half < 89);
-assign start_addr = (pix_y_half - 40) * START_W + (pix_x_half - 26);
+
+wire [8:0] start_x_offset = (pix_x_half >= 26) ? (pix_x_half - 9'd26) : 9'd0;
+wire [7:0] start_y_offset = (pix_y_half >= 40) ? (pix_y_half - 8'd40) : 8'd0;
+
+assign start_addr = (18'd0 + start_y_offset) * 18'd267 + (18'd0 + start_x_offset);
+
 //Map 1 
 wire is_map1_area = (pix_x_half >= 64 && pix_x_half < 136 && pix_y_half >= 140 && pix_y_half < 178);
 assign map1_img_addr = (pix_y_half - 140) * MAP_ICON_W + (pix_x_half - 64);
@@ -825,7 +884,16 @@ assign over_addr = (pix_y_half - 100) * OVER_W + (pix_x_half - 37);
 
 wire is_choose_area = (pix_x_half >= 5 && pix_x_half < 188 &&
                         pix_y_half >= 210 && pix_y_half < 231);
-assign choose_addr = (pix_y_half - 210) * CHOOSE_W + (pix_x_half - 5);
+
+wire [8:0] choose_x_offset = (pix_x_half >= 5) ? (pix_x_half - 9'd5) : 9'd0;
+wire [7:0] choose_y_offset = (pix_y_half >= 210) ? (pix_y_half - 8'd210) : 8'd0;
+
+assign choose_addr = (18'd0 + choose_y_offset) * 18'd183 + (18'd0 + choose_x_offset);
+
+wire is_snake_eye =  (next_direction == DIR_UP &&(( grid_pixel_x >= 6 && grid_pixel_x <= 7 ) || ( grid_pixel_x >= 12 && grid_pixel_x <= 13 ))&& grid_pixel_y >= 4 && grid_pixel_y <= 6) ||
+                     (next_direction == DIR_LEFT &&(( grid_pixel_y >= 6 && grid_pixel_y <= 7 ) || ( grid_pixel_y >= 12 && grid_pixel_y <= 13 ))&& grid_pixel_x >= 4 && grid_pixel_x <= 6) ||
+                     (next_direction == DIR_RIGHT &&(( grid_pixel_y >= 6 && grid_pixel_y <= 7 ) || ( grid_pixel_y >= 12 && grid_pixel_y <= 13 ))&& grid_pixel_x >= 13 && grid_pixel_x <= 15) ||
+                     (next_direction == DIR_DOWN &&(( grid_pixel_x >= 6 && grid_pixel_x <= 7 ) || ( grid_pixel_x >= 12 && grid_pixel_x <= 13 ))&& grid_pixel_y >= 13 && grid_pixel_y <= 15);   
 
 
 always @(posedge clk) begin
@@ -854,7 +922,6 @@ always @(posedge clk) begin
             else if (is_skin_border_box) rgb_next <= 12'hFFF;   
             else rgb_next <= 12'h003; 
         end
-        end
         
         // ============================================================
         // 狀態 2: 遊戲結束畫面
@@ -866,9 +933,15 @@ always @(posedge clk) begin
         else begin
             if (is_score_text && score_text_data != 12'h0f0) rgb_next <= score_text_data;
             else if ((is_score_num_1 || is_score_num_10) && score_num_data != 12'h0f0) rgb_next <= score_num_data;
-            else if (current_grid_x == 0 || current_grid_x == GRID_W-1 || current_grid_y == 0 || current_grid_y == GRID_H-1) rgb_next <= 12'h684;
-            else if (is_snake) rgb_next <= skin_data;
-            
+            else if (current_grid_y == 0 || current_grid_y == GRID_H-1) rgb_next <= 12'h684;
+            else if (current_grid_x == 0 || current_grid_x == GRID_W-1) rgb_next <= 12'h799;
+            else if (is_snake) begin
+                if(current_grid_x == snake_x[0] && current_grid_y == snake_y[0]) begin
+                    if(is_snake_eye) rgb_next <= 12'hfff;
+                    else rgb_next <= skin_data;
+                end
+                else rgb_next <= skin_data;
+            end            
             // 渲染順序：傳送門 -> 閃電 -> 水果
             else if ((is_portal1 || is_portal2) && portal_data != 12'h0f0) rgb_next <= portal_data; // [新增]
             else if (is_lightning && lightning_data != 12'h0f0) rgb_next <= lightning_data;
@@ -879,8 +952,7 @@ always @(posedge clk) begin
                 else rgb_next <= obstacle_data;
             end
             else begin
-                if((current_grid_x + current_grid_y) % 2) rgb_next = 12'h8a5;
-                else rgb_next <= 12'h9c6;
+                rgb_next <= ((current_grid_x + current_grid_y) & 1'b1) ? 12'h8a5 : 12'h9c6;
             end
         end
     end
